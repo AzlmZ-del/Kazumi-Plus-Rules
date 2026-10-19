@@ -14,5 +14,13 @@
     "antiCrawlerEnabled": true,
     "author": "AzlmZ-del",
     "lastUpdate": 1792446753000
+  },
+  {
+    "name": "次元城",
+    "version": "2.0.0",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "AzlmZ-del",
+    "lastUpdate": 1792447606204
   }
 ]

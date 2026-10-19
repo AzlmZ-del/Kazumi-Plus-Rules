@@ -16,10 +16,16 @@ https://raw.githubusercontent.com/AzlmZ-del/KazumiRules/main/
 
 ## 收录的源
 
-| 规则名 | 站点 | 状态 |
-|---|---|---|
-| `Lanerc` | <https://omofun.in> | ✅ 正常 |
-| `Omofun` | <https://www.omofuna.com> | ⚠️ 站点有安全验证，首次访问需在 WebView 里过验证 |
+| 规则名 | 站点 | 模式 | 状态 |
+|---|---|---|---|
+| `Lanerc` | <https://omofun.in> | XPath | ✅ 正常 |
+| `Omofun` | <https://www.omofuna.com> | XPath | ⚠️ 站点有安全验证，首次访问需在 WebView 里过验证 |
+| `次元城` | <https://www.cycani.org> | API | ⚠️ 搜索与章节可用，播放地址需登录（401） |
+
+`次元城` 是纯 API 模式规则，`searchMode` / `chapterMode` 均为 `api`，
+不走 WebView。它的 `auth` 段指向 `POST /api/auth/login`，`@username` /
+`@password` 是占位符，首次使用时 Kazumi 会弹登录框要求填真实账号；
+登录后取 `$.data.token`，接口返回 401 时自动重新登录。
 
 `Omofun` 的搜索页会被「系统安全验证」拦截，规则里已带验证码配置
 （`captchaDetectValue: mx-mac_msg_jump`）。Kazumi 会走 WebView 验证流程，

@@ -1,0 +1,104 @@
+{
+  "api": "9",
+  "type": "anime",
+  "name": "次元城",
+  "version": "2.0.0",
+  "muliSources": true,
+  "useWebview": false,
+  "useNativePlayer": true,
+  "usePost": false,
+  "useLegacyParser": false,
+  "adBlocker": false,
+  "userAgent": "",
+  "baseURL": "https://www.cycani.org",
+  "searchURL": "",
+  "searchList": "",
+  "searchName": "",
+  "searchResult": "",
+  "chapterRoads": "",
+  "chapterResult": "",
+  "referer": "https://www.cycani.org/",
+  "searchMode": "api",
+  "chapterMode": "api",
+  "searchApiConfig": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.cycani.org/api/videos/search?q=@keyword&page=1&page_size=20",
+      "headers": {
+        "X-App-Name": "cyc_web",
+        "X-App-Version": "cycweb",
+        "X-Time-Zone": "Asia/Shanghai",
+        "Accept": "application/json, text/plain, */*"
+      }
+    },
+    "listPath": "$.data.list[*]",
+    "namePath": "$.title",
+    "sourcePath": "$.video_id"
+  },
+  "chapterApiConfig": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.cycani.org/api/videos/@source/sections?player_code=cychub&page=1&page_size=100",
+      "headers": {
+        "X-App-Name": "cyc_web",
+        "X-App-Version": "cycweb",
+        "X-Time-Zone": "Asia/Shanghai",
+        "Accept": "application/json, text/plain, */*"
+      }
+    },
+    "format": "nested",
+    "roadsPath": "",
+    "roadNamePath": "",
+    "episodesPath": "$.data.list[*]",
+    "episodeNamePath": "$.title",
+    "episodeUrlPath": "$.id",
+    "episodePage": {
+      "url": "https://www.cycani.org/api/v2/sections/@episodeUrl/play-url",
+      "query": {}
+    },
+    "play": {
+      "request": {
+        "method": "GET",
+        "url": "",
+        "headers": {
+          "X-App-Name": "cyc_web",
+          "X-App-Version": "cycweb",
+          "X-Time-Zone": "Asia/Shanghai",
+          "Accept": "application/json, text/plain, */*"
+        }
+      },
+      "urlPath": "$.data.url"
+    }
+  },
+  "antiCrawlerConfig": {
+    "enabled": false,
+    "captchaType": 1,
+    "captchaImage": "",
+    "captchaInput": "",
+    "captchaButton": "",
+    "captchaDetectType": 1,
+    "captchaDetectValue": "",
+    "captchaScript": ""
+  },
+  "auth": {
+    "login": {
+      "method": "POST",
+      "url": "https://www.cycani.org/api/auth/login",
+      "headers": {
+        "X-App-Name": "cyc_web",
+        "X-App-Version": "cycweb",
+        "X-Time-Zone": "Asia/Shanghai",
+        "Accept": "application/json, text/plain, */*"
+      },
+      "bodyType": "json",
+      "body": {
+        "username": "@username",
+        "password": "@password"
+      }
+    },
+    "tokenPath": "$.data.token",
+    "refreshOnStatus": [
+      401
+    ]
+  }
+}
