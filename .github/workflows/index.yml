@@ -1,0 +1,35 @@
+name: 重新生成规则索引
+
+on:
+  push:
+    branches: [main]
+    # 只由 index.json 组成的提交不再触发，避免自动提交形成循环
+    paths-ignore:
+      - "index.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 生成 index.json
+        run: python3 tools/gen_index.py
+
+      - name: 提交变更
+        run: |
+          if git diff --quiet -- index.json; then
+            echo "index.json 没有变化"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          git commit -m "chore: 重新生成 index.json"
+          git push
