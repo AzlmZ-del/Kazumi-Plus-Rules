@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Lanerc",
+    "version": "1.2",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "AzlmZ-del",
+    "lastUpdate": 1792446753000
+  },
+  {
+    "name": "Omofun",
+    "version": "1.0",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": true,
+    "author": "AzlmZ-del",
+    "lastUpdate": 1792446753000
+  }
+]
