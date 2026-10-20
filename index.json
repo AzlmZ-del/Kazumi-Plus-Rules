@@ -40,6 +40,14 @@
     "lastUpdate": 1792529107000
   },
   {
+    "name": "大千视界",
+    "version": "1.2",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792529455000
+  },
+  {
     "name": "月之祠",
     "version": "1.1",
     "useNativePlayer": true,

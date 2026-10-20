@@ -38,5 +38,9 @@
   "黑猫动漫": {
     "site": "https://www.baimaodm.com",
     "mode": "WebView + XPath"
+  },
+  "大千视界": {
+    "site": "https://www.sbdl.cc",
+    "mode": "API 搜索 + XPath 章节"
   }
 }
