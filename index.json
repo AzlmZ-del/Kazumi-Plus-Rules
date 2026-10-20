@@ -1,19 +1,19 @@
 [
   {
-    "name": "Lanerc",
-    "version": "1.2",
-    "useNativePlayer": true,
-    "antiCrawlerEnabled": false,
-    "author": "AzlmZ-del",
-    "lastUpdate": 1792446753000
-  },
-  {
     "name": "omofuna",
     "version": "1.0",
     "useNativePlayer": true,
     "antiCrawlerEnabled": true,
     "author": "AzlmZ-del",
-    "lastUpdate": 1792518907398
+    "lastUpdate": 1792518940000
+  },
+  {
+    "name": "omofuni",
+    "version": "1.2",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "AzlmZ-del",
+    "lastUpdate": 1792519038693
   },
   {
     "name": "次元城",

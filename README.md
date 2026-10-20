@@ -49,7 +49,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 
 | 规则名 | 站点 | 模式 | 状态 |
 |---|---|---|---|
-| `Lanerc` | <https://omofun.in> | XPath | ✅ 正常 |
+| `omofuni` | <https://omofun.in> | XPath | ✅ 正常 |
 | `omofuna` | <https://www.omofuna.com> | XPath | ⚠️ 站点有安全验证，首次访问需在 WebView 里过验证 |
 | `次元城` | <https://www.cycani.org> | API | ⚠️ 搜索与章节可用，播放地址需登录（401） |
 
@@ -74,7 +74,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | `episodePage` / `play` | 播放直链接口 |
 | `antiCrawlerConfig` | 验证码流程 |
 
-所以 `Lanerc`、`omofuna` 这类 XPath 规则在官方版上能正常用；
+所以 `omofuni`、`omofuna` 这类 XPath 规则在官方版上能正常用；
 `次元城` 这种纯 API 规则**必须配 Kazumi Plus**，官方版装了也搜不出东西。
 
 ## 仓库结构
@@ -82,7 +82,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 ```
 .
 ├── index.json            # 规则索引（自动生成，不要手改）
-├── Lanerc.json           # 规则文件，文件名必须等于 name 字段
+├── omofuni.json          # 规则文件，文件名必须等于 name 字段
 ├── omofuna.json
 ├── 次元城.json
 ├── tools/gen_index.py    # 索引生成脚本
