@@ -6,7 +6,8 @@ Kazumi 的规则仓库约定：
   - 规则文件名必须等于该规则的 name 字段，即 <name>.json
 
 本脚本只依赖标准库，扫描根目录下除 index.json 外的所有 *.json，
-按 name 排序后写出 index.json。
+按 name 排序后写出 index.json，并同步刷新 README 里「更新记录」表格
+（表格夹在 <!-- rules-table:start --> 与 <!-- rules-table:end --> 之间）。
 
 lastUpdate 取该文件的最后一次 git 提交时间（毫秒时间戳）。
 新文件尚未提交时回退到文件修改时间。这样重新 clone 仓库不会
@@ -23,10 +24,16 @@ import json
 import os
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_NAME = "index.json"
+README_NAME = "README.md"
+
+# README 里自动维护的「更新记录」表格用这对标记圈起来，脚本只替换中间部分。
+TABLE_START = "<!-- rules-table:start -->"
+TABLE_END = "<!-- rules-table:end -->"
 
 # 规则里没有 author 字段时写进索引的作者名，改成你自己的。
 DEFAULT_AUTHOR = "AzlmZ-del"
@@ -118,6 +125,47 @@ def render(entries: list[dict]) -> str:
     return json.dumps(entries, ensure_ascii=False, indent=2) + "\n"
 
 
+def render_table(entries: list[dict]) -> str:
+    """README 里那张「更新记录」表格。"""
+    lines = [
+        "| 规则名 | 版本 | 最后更新 |",
+        "| --- | --- | --- |",
+    ]
+    for entry in entries:
+        day = time.strftime("%Y-%m-%d", time.localtime(entry["lastUpdate"] / 1000))
+        lines.append(f"| {entry['name']} | {entry['version']} | {day} |")
+    return "\n".join(lines)
+
+
+def sync_readme(entries: list[dict], check_only: bool) -> int:
+    """把 README 里标记之间的表格换成最新内容。返回 0 正常，1 不一致。"""
+    path = REPO_ROOT / README_NAME
+    if not path.exists():
+        return 0
+
+    text = path.read_text(encoding="utf-8")
+    start = text.find(TABLE_START)
+    end = text.find(TABLE_END)
+    if start < 0 or end < 0 or end < start:
+        print(f"{README_NAME} 里没找到表格标记，跳过更新记录同步", file=sys.stderr)
+        return 0
+
+    head = text[: start + len(TABLE_START)]
+    tail = text[end:]
+    updated = f"{head}\n{render_table(entries)}\n{tail}"
+
+    if updated == text:
+        return 0
+    if check_only:
+        print(f"{README_NAME} 的更新记录表格不是最新，请运行 python tools/gen_index.py", file=sys.stderr)
+        return 1
+
+    with path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(updated)
+    print(f"已更新 {README_NAME} 的更新记录表格")
+    return 0
+
+
 def main() -> int:
     check_only = "--check" in sys.argv[1:]
 
@@ -142,11 +190,15 @@ def main() -> int:
         if current != text:
             print("index.json 与规则文件不一致，请运行 python tools/gen_index.py", file=sys.stderr)
             return 1
+        if sync_readme(entries, check_only=True) != 0:
+            return 1
         print(f"index.json 已是最新（{len(entries)} 条规则）")
         return 0
 
     with index_path.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write(text)
+
+    sync_readme(entries, check_only=False)
 
     print(f"已写入 {INDEX_NAME}，共 {len(entries)} 条规则：")
     for entry in entries:

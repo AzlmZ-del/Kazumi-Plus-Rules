@@ -66,6 +66,19 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 （`captchaDetectValue: mx-mac_msg_jump`）。Kazumi 会走 WebView 验证流程，
 但这套流程依赖站点前端，站点改版就可能失效。
 
+## 更新记录
+
+下表由 `tools/gen_index.py` 自动维护（数据来自 `index.json`），别手改。
+
+<!-- rules-table:start -->
+| 规则名 | 版本 | 最后更新 |
+| --- | --- | --- |
+| omofuna | 1.0 | 2026-10-21 |
+| omofuni | 1.2 | 2026-10-21 |
+| 月之祠 | 1.1 | 2026-10-21 |
+| 次元城 | 2.0.0 | 2026-10-20 |
+<!-- rules-table:end -->
+
 ## 与官方版的兼容性
 
 `index.json` 与规则文件的**基础格式**完全按上游约定写，官方原版也能挂这个仓库。
@@ -110,9 +123,9 @@ Kazumi 的约定：
    python tools/gen_index.py
    ```
 
-   它会扫描所有规则文件，重写 `index.json`，`lastUpdate` 取该文件的最后一次
-   git 提交时间（未提交的文件回退到修改时间）。这样重新 clone 仓库不会把
-   所有时间戳一起刷新。
+   它会扫描所有规则文件，重写 `index.json`，同时刷新上面「更新记录」那张表。
+   `lastUpdate` 取该文件的最后一次 git 提交时间（未提交的文件回退到修改时间）。
+   这样重新 clone 仓库不会把所有时间戳一起刷新。
 3. 提交并推送。推上去之后 GitHub Actions 会再跑一次脚本兜底，
    `index.json` 有变化就自动提交。
 
