@@ -73,10 +73,10 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 版本 | 最后更新 |
 | --- | --- | --- |
-| omofuna | 1.0 | 2026-10-20 |
-| omofuni | 1.2 | 2026-10-20 |
-| 月之祠 | 1.1 | 2026-10-20 |
-| 次元城 | 2.0 | 2026-10-20 |
+| omofuna | 1.0 | 2026-10-21 |
+| omofuni | 1.2 | 2026-10-21 |
+| 月之祠 | 1.1 | 2026-10-21 |
+| 次元城 | 2.0 | 2026-10-21 |
 <!-- rules-table:end -->
 
 ## 与官方版的兼容性

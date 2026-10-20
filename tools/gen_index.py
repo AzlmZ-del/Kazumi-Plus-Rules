@@ -35,6 +35,11 @@ README_NAME = "README.md"
 TABLE_START = "<!-- rules-table:start -->"
 TABLE_END = "<!-- rules-table:end -->"
 
+# 表格里的日期固定按 UTC+8 算。
+# 不能用本机时区：本地是 UTC+8、GitHub Actions 跑在 UTC，
+# 同一份 index.json 会算出两个不同的日期，CI 每次都要改写 README。
+TABLE_UTC_OFFSET = 8 * 3600
+
 # 规则里没有 author 字段时写进索引的作者名，改成你自己的。
 DEFAULT_AUTHOR = "AzlmZ-del"
 
@@ -132,7 +137,8 @@ def render_table(entries: list[dict]) -> str:
         "| --- | --- | --- |",
     ]
     for entry in entries:
-        day = time.strftime("%Y-%m-%d", time.localtime(entry["lastUpdate"] / 1000))
+        stamp = entry["lastUpdate"] / 1000 + TABLE_UTC_OFFSET
+        day = time.strftime("%Y-%m-%d", time.gmtime(stamp))
         lines.append(f"| {entry['name']} | {entry['version']} | {day} |")
     return "\n".join(lines)
 
