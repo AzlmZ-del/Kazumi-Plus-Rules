@@ -54,6 +54,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
 | AGE | <https://www.agedm.io> | XPath | 1.5 | 2026-10-21 |
+| Akianime | <https://www.akianime.cc> | WebView + XPath | 1.4 | 2026-10-21 |
 | omofuna | <https://www.omofuna.com> | XPath | 1.0 | 2026-10-21 |
 | omofuni | <https://omofun.in> | XPath | 1.2 | 2026-10-21 |
 | 七色番 | <https://www.7sefun.top> | WebView + XPath | 1.3 | 2026-10-21 |
