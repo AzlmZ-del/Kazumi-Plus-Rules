@@ -1,4 +1,4 @@
-# KazumiRules
+# Kazumi-Plus-Rules
 
 个人自用的 [Kazumi](https://github.com/Predidit/Kazumi) 视频源（规则）仓库，
 配套魔改版 App [**Kazumi Plus**](https://github.com/AzlmZ-del/Kazumi-Plus)。
@@ -35,7 +35,7 @@
 在 Kazumi 里打开 **设置 → 规则仓库 → 管理规则仓库 → ＋**，填这个地址：
 
 ```
-https://raw.githubusercontent.com/AzlmZ-del/KazumiRules/main/
+https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 ```
 
 也可以直接粘贴 `index.json` 的完整地址，两种写法等价。
