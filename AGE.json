@@ -8,7 +8,7 @@
     "useWebview": true,
     "useNativePlayer": true,
     "userAgent": "",
-    "baseURL": "https://www.agedm.io/",
+    "baseURL": "https://www.agedm.io",
     "searchURL": "https://www.agedm.io/search?query=@keyword",
     "searchList": "//div[2]/div/section/div/div/div/div",
     "searchName": "//div/div[2]/h5/a",

@@ -11,7 +11,7 @@
     "useLegacyParser": false,
     "adBlocker": false,
     "userAgent": "",
-    "baseURL": "https://www.moonci.com/",
+    "baseURL": "https://www.moonci.com",
     "searchMode": "api",
     "chapterMode": "xpath",
     "searchApiConfig": {
