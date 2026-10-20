@@ -47,12 +47,17 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 
 ## 收录的源
 
-| 规则名 | 站点 | 模式 | 状态 |
-|---|---|---|---|
-| `omofuni` | <https://omofun.in> | XPath | ✅ 正常 |
-| `omofuna` | <https://www.omofuna.com> | XPath | ⚠️ 站点有安全验证，首次访问需在 WebView 里过验证 |
-| `月之祠` | <https://www.moonci.com> | API 搜索 + XPath 章节 | ✅ 正常 |
-| `次元城` | <https://www.cycani.org> | API | ⚠️ 搜索与章节可用，播放地址需登录（401） |
+下表由 `tools/gen_index.py` 自动维护（版本与日期来自 `index.json`，
+站点与状态来自 `tools/rule_meta.json`），别手改。
+
+<!-- rules-table:start -->
+| 规则名 | 站点 | 模式 | 状态 | 版本 | 最后更新 |
+| --- | --- | --- | --- | --- | --- |
+| omofuna | <https://www.omofuna.com> | XPath | ⚠️ 站点有安全验证，首次访问需在 WebView 里过验证 | 1.0 | 2026-10-21 |
+| omofuni | <https://omofun.in> | XPath | ✅ 正常 | 1.2 | 2026-10-21 |
+| 月之祠 | <https://www.moonci.com> | API 搜索 + XPath 章节 | ✅ 正常 | 1.1 | 2026-10-21 |
+| 次元城 | <https://www.cycani.org> | API | ⚠️ 搜索与章节可用，播放地址需登录（401） | 2.0 | 2026-10-21 |
+<!-- rules-table:end -->
 
 `月之祠` 的搜索走站点自带的 `index.php/ajax/suggest` 接口（`searchMode: api`），
 章节列表用 XPath 解析 `hl-plays-list`，播放仍走 WebView + 原生播放器。
@@ -65,19 +70,6 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 `omofuna` 的搜索页会被「系统安全验证」拦截，规则里已带验证码配置
 （`captchaDetectValue: mx-mac_msg_jump`）。Kazumi 会走 WebView 验证流程，
 但这套流程依赖站点前端，站点改版就可能失效。
-
-## 更新记录
-
-下表由 `tools/gen_index.py` 自动维护（数据来自 `index.json`），别手改。
-
-<!-- rules-table:start -->
-| 规则名 | 版本 | 最后更新 |
-| --- | --- | --- |
-| omofuna | 1.0 | 2026-10-21 |
-| omofuni | 1.2 | 2026-10-21 |
-| 月之祠 | 1.1 | 2026-10-21 |
-| 次元城 | 2.0 | 2026-10-21 |
-<!-- rules-table:end -->
 
 ## 与官方版的兼容性
 

@@ -6,7 +6,7 @@ Kazumi 的规则仓库约定：
   - 规则文件名必须等于该规则的 name 字段，即 <name>.json
 
 本脚本只依赖标准库，扫描根目录下除 index.json 外的所有 *.json，
-按 name 排序后写出 index.json，并同步刷新 README 里「更新记录」表格
+按 name 排序后写出 index.json，并同步刷新 README「收录的源」表格
 （表格夹在 <!-- rules-table:start --> 与 <!-- rules-table:end --> 之间）。
 
 lastUpdate 取该文件的最后一次 git 提交时间（毫秒时间戳）。
@@ -30,8 +30,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_NAME = "index.json"
 README_NAME = "README.md"
+META_NAME = "tools/rule_meta.json"
 
-# README 里自动维护的「更新记录」表格用这对标记圈起来，脚本只替换中间部分。
+# README「收录的源」表格用这对标记圈起来，脚本只替换中间部分。
 TABLE_START = "<!-- rules-table:start -->"
 TABLE_END = "<!-- rules-table:end -->"
 
@@ -130,16 +131,47 @@ def render(entries: list[dict]) -> str:
     return json.dumps(entries, ensure_ascii=False, indent=2) + "\n"
 
 
+def load_rule_meta() -> dict[str, dict]:
+    """读 tools/rule_meta.json：人工维护的站点、模式、状态。"""
+    path = REPO_ROOT / META_NAME
+    if not path.exists():
+        return {}
+    with path.open("r", encoding="utf-8") as handle:
+        data = json.load(handle)
+    if not isinstance(data, dict):
+        raise ValueError(f"{META_NAME} 的根必须是 JSON 对象")
+    return data
+
+
+def rule_base_url(name: str) -> str:
+    """没在 rule_meta.json 里登记时，退回规则文件自己的 baseURL。"""
+    path = REPO_ROOT / f"{name}.json"
+    try:
+        with path.open("r", encoding="utf-8") as handle:
+            return str(json.load(handle).get("baseURL", "")).rstrip("/")
+    except (OSError, ValueError):
+        return ""
+
+
 def render_table(entries: list[dict]) -> str:
-    """README 里那张「更新记录」表格。"""
+    """README 里「收录的源」那张表，版本与日期来自 index.json。"""
+    meta = load_rule_meta()
     lines = [
-        "| 规则名 | 版本 | 最后更新 |",
-        "| --- | --- | --- |",
+        "| 规则名 | 站点 | 模式 | 状态 | 版本 | 最后更新 |",
+        "| --- | --- | --- | --- | --- | --- |",
     ]
     for entry in entries:
+        name = entry["name"]
+        info = meta.get(name, {})
+        site = str(info.get("site") or rule_base_url(name))
+        site_cell = f"<{site}>" if site else ""
+        mode = str(info.get("mode", ""))
+        status = str(info.get("status", ""))
         stamp = entry["lastUpdate"] / 1000 + TABLE_UTC_OFFSET
         day = time.strftime("%Y-%m-%d", time.gmtime(stamp))
-        lines.append(f"| {entry['name']} | {entry['version']} | {day} |")
+        lines.append(
+            f"| {name} | {site_cell} | {mode} | {status} | {entry['version']} | {day} |"
+        )
     return "\n".join(lines)
 
 
@@ -153,7 +185,7 @@ def sync_readme(entries: list[dict], check_only: bool) -> int:
     start = text.find(TABLE_START)
     end = text.find(TABLE_END)
     if start < 0 or end < 0 or end < start:
-        print(f"{README_NAME} 里没找到表格标记，跳过更新记录同步", file=sys.stderr)
+        print(f"{README_NAME} 里没找到表格标记，跳过收录的源表格同步", file=sys.stderr)
         return 0
 
     head = text[: start + len(TABLE_START)]
@@ -163,12 +195,12 @@ def sync_readme(entries: list[dict], check_only: bool) -> int:
     if updated == text:
         return 0
     if check_only:
-        print(f"{README_NAME} 的更新记录表格不是最新，请运行 python tools/gen_index.py", file=sys.stderr)
+        print(f"{README_NAME} 的收录的源表格不是最新，请运行 python tools/gen_index.py", file=sys.stderr)
         return 1
 
     with path.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write(updated)
-    print(f"已更新 {README_NAME} 的更新记录表格")
+    print(f"已更新 {README_NAME} 的收录的源表格")
     return 0
 
 

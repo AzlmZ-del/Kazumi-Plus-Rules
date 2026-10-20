@@ -1,0 +1,22 @@
+{
+  "omofuni": {
+    "site": "https://omofun.in",
+    "mode": "XPath",
+    "status": "✅ 正常"
+  },
+  "omofuna": {
+    "site": "https://www.omofuna.com",
+    "mode": "XPath",
+    "status": "⚠️ 站点有安全验证，首次访问需在 WebView 里过验证"
+  },
+  "月之祠": {
+    "site": "https://www.moonci.com",
+    "mode": "API 搜索 + XPath 章节",
+    "status": "✅ 正常"
+  },
+  "次元城": {
+    "site": "https://www.cycani.org",
+    "mode": "API",
+    "status": "⚠️ 搜索与章节可用，播放地址需登录（401）"
+  }
+}
