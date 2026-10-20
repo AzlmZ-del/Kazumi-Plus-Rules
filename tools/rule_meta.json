@@ -18,5 +18,9 @@
   "次元城": {
     "site": "https://www.cycani.org",
     "mode": "API"
+  },
+  "xfdmnext": {
+    "site": "https://next.xifanacg.com",
+    "mode": "API"
   }
 }
