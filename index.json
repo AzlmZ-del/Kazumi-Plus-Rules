@@ -16,6 +16,38 @@
     "lastUpdate": 1792529250000
   },
   {
+    "name": "E站弹幕网",
+    "version": "1.2",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792530054000
+  },
+  {
+    "name": "giriGiriLove",
+    "version": "2.5",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792530054000
+  },
+  {
+    "name": "MuteFun",
+    "version": "1.4",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792530054000
+  },
+  {
+    "name": "MX动漫",
+    "version": "2.4",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792530054000
+  },
+  {
     "name": "omofuna",
     "version": "1.0",
     "useNativePlayer": true,
@@ -64,6 +96,14 @@
     "lastUpdate": 1792528264000
   },
   {
+    "name": "橘子动漫",
+    "version": "1.2",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792530054000
+  },
+  {
     "name": "次元城",
     "version": "2.0",
     "useNativePlayer": true,
@@ -86,6 +126,22 @@
     "antiCrawlerEnabled": false,
     "author": "Predidit",
     "lastUpdate": 1792528966000
+  },
+  {
+    "name": "路漫漫",
+    "version": "2.3",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792530054000
+  },
+  {
+    "name": "青空次元",
+    "version": "1.0",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792530054000
   },
   {
     "name": "黑猫动漫",

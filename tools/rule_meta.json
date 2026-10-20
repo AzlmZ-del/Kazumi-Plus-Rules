@@ -46,5 +46,33 @@
   "动漫巴士": {
     "site": "https://dmbus.cc",
     "mode": "WebView + XPath"
+  },
+  "青空次元": {
+    "site": "https://www.sorani.net",
+    "mode": "API"
+  },
+  "E站弹幕网": {
+    "site": "https://m.ezdmw.org",
+    "mode": "WebView + XPath"
+  },
+  "giriGiriLove": {
+    "site": "https://ani.girigirilove.com",
+    "mode": "API 搜索 + XPath 章节"
+  },
+  "路漫漫": {
+    "site": "https://www.lmm85.com",
+    "mode": "API 搜索 + XPath 章节"
+  },
+  "橘子动漫": {
+    "site": "https://www.mgnacg.com",
+    "mode": "API 搜索 + XPath 章节"
+  },
+  "MuteFun": {
+    "site": "https://www.2kdm.com",
+    "mode": "API 搜索 + XPath 章节"
+  },
+  "MX动漫": {
+    "site": "https://www.dcc3.com",
+    "mode": "WebView + XPath"
   }
 }
