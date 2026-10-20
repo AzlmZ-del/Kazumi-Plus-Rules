@@ -1,6 +1,7 @@
 # KazumiRules
 
-个人自用的 [Kazumi](https://github.com/Predidit/Kazumi) 视频源（规则）仓库。
+个人自用的 [Kazumi](https://github.com/Predidit/Kazumi) 视频源（规则）仓库，
+配套魔改版 App [**Kazumi Plus**](https://github.com/AzlmZ-del/Kazumi-Plus)。
 
 > **这不是官方项目，也没有向上游贡献的打算。** 规则只按自己手头的源维护，
 > 失效、改版、停更都属正常。
@@ -12,8 +13,9 @@
 站点关站、接口改版、风控升级导致规则失效时，不承诺修复时间。
 
 **二、配套使用的是一个魔改版 App。** 基于 [`Predidit/Kazumi`](https://github.com/Predidit/Kazumi)
-二次修改（fork 在 `AzlmZ-del/Kazumi`），相对官方版多了这些功能，全部是个人
-需求驱动的，**没有向上游提 PR**：
+二次修改，fork 后改名为 [`AzlmZ-del/Kazumi-Plus`](https://github.com/AzlmZ-del/Kazumi-Plus)，
+安装后显示为 **Kazumi Plus**。相对官方版多了这些功能，全部是个人需求驱动的，
+**没有向上游提 PR**：
 
 - **多规则仓库**：可同时挂多个第三方仓库，规则条目记录来源，目录聚合、同名去重、
   按仓库地址路由下载，另有独立的管理页
@@ -63,7 +65,7 @@ https://raw.githubusercontent.com/AzlmZ-del/KazumiRules/main/
 ## 与官方版的兼容性
 
 `index.json` 与规则文件的**基础格式**完全按上游约定写，官方原版也能挂这个仓库。
-但下面这些字段只有魔改版认识，官方版会直接忽略：
+但下面这些字段只有 **Kazumi Plus** 认识，官方版会直接忽略：
 
 | 字段 | 用途 |
 |---|---|
@@ -73,7 +75,7 @@ https://raw.githubusercontent.com/AzlmZ-del/KazumiRules/main/
 | `antiCrawlerConfig` | 验证码流程 |
 
 所以 `Lanerc`、`Omofun` 这类 XPath 规则在官方版上能正常用；
-`次元城` 这种纯 API 规则**必须配魔改版**，官方版装了也搜不出东西。
+`次元城` 这种纯 API 规则**必须配 Kazumi Plus**，官方版装了也搜不出东西。
 
 ## 仓库结构
 
