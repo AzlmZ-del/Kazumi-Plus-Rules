@@ -40,6 +40,14 @@
     "lastUpdate": 1792529107000
   },
   {
+    "name": "动漫巴士",
+    "version": "1.4",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792529575000
+  },
+  {
     "name": "大千视界",
     "version": "1.2",
     "useNativePlayer": true,

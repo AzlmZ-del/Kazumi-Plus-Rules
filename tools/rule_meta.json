@@ -42,5 +42,9 @@
   "大千视界": {
     "site": "https://www.sbdl.cc",
     "mode": "API 搜索 + XPath 章节"
+  },
+  "动漫巴士": {
+    "site": "https://dmbus.cc",
+    "mode": "WebView + XPath"
   }
 }
