@@ -1,7 +1,7 @@
 {
   "api": "9",
   "type": "anime",
-  "name": "Omofun",
+  "name": "omofun",
   "version": "1.0",
   "muliSources": true,
   "useWebview": true,
