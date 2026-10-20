@@ -59,6 +59,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | 月之祠 | <https://www.moonci.com> | API 搜索 + XPath 章节 | 1.1 | 2026-10-21 |
 | 次元城 | <https://www.cycani.org> | API | 2.0 | 2026-10-21 |
 | 稀饭动漫（新） | <https://next.xifanacg.com> | API | 1.1 | 2026-10-21 |
+| 稀饭动漫（旧） | <https://dm1.xfdm.pro> | WebView + XPath | 1.1 | 2026-10-21 |
 <!-- rules-table:end -->
 
 ## 与官方版的兼容性

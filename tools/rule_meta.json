@@ -22,5 +22,9 @@
   "稀饭动漫（新）": {
     "site": "https://next.xifanacg.com",
     "mode": "API"
+  },
+  "稀饭动漫（旧）": {
+    "site": "https://dm1.xfdm.pro",
+    "mode": "WebView + XPath"
   }
 }
