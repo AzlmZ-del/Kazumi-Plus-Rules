@@ -53,6 +53,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
+| AGE | <https://www.agedm.io> | XPath | 1.5 | 2026-10-21 |
 | omofuna | <https://www.omofuna.com> | XPath | 1.0 | 2026-10-21 |
 | omofuni | <https://omofun.in> | XPath | 1.2 | 2026-10-21 |
 | 月之祠 | <https://www.moonci.com> | API 搜索 + XPath 章节 | 1.1 | 2026-10-21 |

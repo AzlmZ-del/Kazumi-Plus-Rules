@@ -1,4 +1,8 @@
 {
+  "AGE": {
+    "site": "https://www.agedm.io",
+    "mode": "XPath"
+  },
   "omofuni": {
     "site": "https://omofun.in",
     "mode": "XPath"

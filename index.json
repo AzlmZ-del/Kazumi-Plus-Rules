@@ -1,5 +1,13 @@
 [
   {
+    "name": "AGE",
+    "version": "1.5",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792527883961
+  },
+  {
     "name": "omofuna",
     "version": "1.0",
     "useNativePlayer": true,
