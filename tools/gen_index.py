@@ -132,7 +132,7 @@ def render(entries: list[dict]) -> str:
 
 
 def load_rule_meta() -> dict[str, dict]:
-    """读 tools/rule_meta.json：人工维护的站点、模式、状态。"""
+    """读 tools/rule_meta.json：人工维护的站点与模式。"""
     path = REPO_ROOT / META_NAME
     if not path.exists():
         return {}
@@ -157,8 +157,8 @@ def render_table(entries: list[dict]) -> str:
     """README 里「收录的源」那张表，版本与日期来自 index.json。"""
     meta = load_rule_meta()
     lines = [
-        "| 规则名 | 站点 | 模式 | 状态 | 版本 | 最后更新 |",
-        "| --- | --- | --- | --- | --- | --- |",
+        "| 规则名 | 站点 | 模式 | 版本 | 最后更新 |",
+        "| --- | --- | --- | --- | --- |",
     ]
     for entry in entries:
         name = entry["name"]
@@ -166,11 +166,10 @@ def render_table(entries: list[dict]) -> str:
         site = str(info.get("site") or rule_base_url(name))
         site_cell = f"<{site}>" if site else ""
         mode = str(info.get("mode", ""))
-        status = str(info.get("status", ""))
         stamp = entry["lastUpdate"] / 1000 + TABLE_UTC_OFFSET
         day = time.strftime("%Y-%m-%d", time.gmtime(stamp))
         lines.append(
-            f"| {name} | {site_cell} | {mode} | {status} | {entry['version']} | {day} |"
+            f"| {name} | {site_cell} | {mode} | {entry['version']} | {day} |"
         )
     return "\n".join(lines)
 
