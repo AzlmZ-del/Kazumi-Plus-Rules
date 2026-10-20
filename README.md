@@ -51,7 +51,11 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 |---|---|---|---|
 | `omofuni` | <https://omofun.in> | XPath | ✅ 正常 |
 | `omofuna` | <https://www.omofuna.com> | XPath | ⚠️ 站点有安全验证，首次访问需在 WebView 里过验证 |
+| `月之祠` | <https://www.moonci.com> | API 搜索 + XPath 章节 | ✅ 正常 |
 | `次元城` | <https://www.cycani.org> | API | ⚠️ 搜索与章节可用，播放地址需登录（401） |
+
+`月之祠` 的搜索走站点自带的 `index.php/ajax/suggest` 接口（`searchMode: api`），
+章节列表用 XPath 解析 `hl-plays-list`，播放仍走 WebView + 原生播放器。
 
 `次元城` 是纯 API 模式规则，`searchMode` / `chapterMode` 均为 `api`，
 不走 WebView。它的 `auth` 段指向 `POST /api/auth/login`，`@username` /
@@ -84,6 +88,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 ├── index.json            # 规则索引（自动生成，不要手改）
 ├── omofuni.json          # 规则文件，文件名必须等于 name 字段
 ├── omofuna.json
+├── 月之祠.json
 ├── 次元城.json
 ├── tools/gen_index.py    # 索引生成脚本
 └── .github/workflows/    # 推送后自动重算索引
