@@ -2,6 +2,7 @@
   "api": "9",
   "type": "anime",
   "name": "次元城",
+  "author": "AzlmZ-del",
   "version": "2.0",
   "muliSources": true,
   "useWebview": false,

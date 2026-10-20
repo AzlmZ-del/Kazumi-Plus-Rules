@@ -2,6 +2,7 @@
   "api": "9",
   "type": "anime",
   "name": "omofuna",
+  "author": "AzlmZ-del",
   "version": "1.0",
   "muliSources": true,
   "useWebview": true,
