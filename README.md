@@ -76,7 +76,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | omofuna | 1.0 | 2026-10-21 |
 | omofuni | 1.2 | 2026-10-21 |
 | 月之祠 | 1.1 | 2026-10-21 |
-| 次元城 | 2.0.0 | 2026-10-20 |
+| 次元城 | 2.0 | 2026-10-20 |
 <!-- rules-table:end -->
 
 ## 与官方版的兼容性
