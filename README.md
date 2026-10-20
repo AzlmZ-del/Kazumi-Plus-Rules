@@ -62,6 +62,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | 次元城 | <https://www.cycani.org> | API | 2.0 | 2026-10-21 |
 | 稀饭动漫（新） | <https://next.xifanacg.com> | API | 1.1 | 2026-10-21 |
 | 稀饭动漫（旧） | <https://dm1.xfdm.pro> | WebView + XPath | 1.1 | 2026-10-21 |
+| 黑猫动漫 | <https://www.baimaodm.com> | WebView + XPath | 1.0 | 2026-10-21 |
 <!-- rules-table:end -->
 
 ## 与官方版的兼容性

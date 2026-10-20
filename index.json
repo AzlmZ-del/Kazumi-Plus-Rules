@@ -70,5 +70,13 @@
     "antiCrawlerEnabled": false,
     "author": "Predidit",
     "lastUpdate": 1792528966000
+  },
+  {
+    "name": "黑猫动漫",
+    "version": "1.0",
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "author": "Predidit",
+    "lastUpdate": 1792529362000
   }
 ]
