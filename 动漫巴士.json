@@ -10,10 +10,12 @@
     "adBlocker": true,
     "userAgent": "",
     "baseURL": "https://dmbus.cc",
+    "searchMode": "xpath",
     "searchURL": "https://dmbus.cc/s----------.html?wd=@keyword",
     "searchList": "//div/div[3]/ul/li",
     "searchName": "//div/a[2]",
     "searchResult": "//div/a[2]",
+    "chapterMode": "xpath",
     "chapterRoads": "//div/div[4]/div/ul",
     "chapterResult": "//li/a"
 }

@@ -12,10 +12,12 @@
     "adBlocker": false,
     "userAgent": "",
     "baseURL": "https://dm1.xfdm.pro",
+    "searchMode": "xpath",
     "searchURL": "https://dm1.xfdm.pro/search.html?wd=@keyword",
     "searchList": "//div[@class='public-list-box search-box flex rel']",
     "searchName": "//div[3]/div[1]/div[1]",
     "searchResult": "//div[3]/div[2]/a[1]",
+    "chapterMode": "xpath",
     "chapterRoads": "//ul[@class='anthology-list-play size']",
     "chapterResult": "//li/a",
     "referer": ""

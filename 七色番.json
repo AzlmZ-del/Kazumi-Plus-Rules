@@ -9,10 +9,12 @@
     "useNativePlayer": false,
     "userAgent": "",
     "baseURL": "https://www.7sefun.top",
+    "searchMode": "xpath",
     "searchURL": "https://www.7sefun.top/vodsearch/-------------.html?wd=@keyword",
     "searchList": "//div[2]/div[2]/div[2]/div[2]/div",
     "searchName": "//div[2]/text()",
     "searchResult": "//a",
+    "chapterMode": "xpath",
     "chapterRoads": "//div[2]/div[2]/div[2]/div/div[2]/div[1]//div",
     "chapterResult": "//a"
 }

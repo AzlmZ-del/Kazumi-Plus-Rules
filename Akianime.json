@@ -10,10 +10,12 @@
     "useLegacyParser": false,
     "userAgent": "",
     "baseURL": "https://www.akianime.cc",
+    "searchMode": "xpath",
     "searchURL": "https://www.akianime.cc/bgmsearch/-------------.html?wd=@keyword",
     "searchList": "//div[@class='vod-detail style-detail cor4 search-list']",
     "searchName": "//div/div[2]/a/h3",
     "searchResult": "//div/div[2]/div/div[1]/a",
+    "chapterMode": "xpath",
     "chapterRoads": "//ul[@class='anthology-list-play size']",
     "chapterResult": "//li/a"
 }

@@ -10,10 +10,12 @@
     "adBlocker": true,
     "userAgent": "",
     "baseURL": "https://www.baimaodm.com",
+    "searchMode": "xpath",
     "searchURL": "https://www.baimaodm.com/s_all?ex=1&kw=@keyword",
     "searchList": "//div[4]/div[2]/div[1]/ul/li",
     "searchName": "//h2/a",
     "searchResult": "//h2/a",
+    "chapterMode": "xpath",
     "chapterRoads": "//div[2]/div[2]/div[8]/div/div/ul",
     "chapterResult": "//li/a"
 }
