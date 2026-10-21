@@ -1,154 +1,173 @@
 [
   {
     "name": "AGE",
+    "author": "AzlmZ-del",
+    "type": "XPath",
     "version": "2.1",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "AzlmZ-del",
     "lastUpdate": 1792569217000
   },
   {
     "name": "Akianime",
+    "author": "AzlmZ-del",
+    "type": "XPath",
     "version": "1.7",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "AzlmZ-del",
     "lastUpdate": 1792568540000
   },
   {
     "name": "E站弹幕网",
+    "author": "AzlmZ-del",
+    "type": "XPath",
     "version": "1.8",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "AzlmZ-del",
     "lastUpdate": 1792585902000
   },
   {
     "name": "giriGiriLove",
+    "author": "Predidit",
+    "type": "混合",
     "version": "2.6",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "MuteFun",
+    "author": "Predidit",
+    "type": "混合",
     "version": "1.5",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "MX动漫",
+    "author": "Predidit",
+    "type": "XPath",
     "version": "2.5",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "omofuna",
+    "author": "AzlmZ-del",
+    "type": "XPath",
     "version": "1.1",
     "useNativePlayer": false,
     "antiCrawlerEnabled": true,
-    "author": "AzlmZ-del",
     "lastUpdate": 1792568540000
   },
   {
     "name": "omofuni",
+    "author": "AzlmZ-del",
+    "type": "XPath",
     "version": "1.3",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "AzlmZ-del",
     "lastUpdate": 1792568540000
   },
   {
     "name": "七色番",
+    "author": "Predidit",
+    "type": "XPath",
     "version": "1.4",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "动漫巴士",
+    "author": "Predidit",
+    "type": "XPath",
     "version": "1.5",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "大千视界",
+    "author": "Predidit",
+    "type": "混合",
     "version": "1.3",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "月之祠",
+    "author": "Predidit",
+    "type": "混合",
     "version": "1.2",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "橘子动漫",
+    "author": "Predidit",
+    "type": "混合",
     "version": "1.3",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "次元城",
+    "author": "AzlmZ-del",
+    "type": "API",
     "version": "2.1",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "AzlmZ-del",
     "lastUpdate": 1792568540000
   },
   {
     "name": "稀饭动漫（新）",
+    "author": "Predidit",
+    "type": "API",
     "version": "1.2",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "稀饭动漫（旧）",
+    "author": "Predidit",
+    "type": "XPath",
     "version": "1.2",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "路漫漫",
+    "author": "Predidit",
+    "type": "混合",
     "version": "2.4",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "青空次元",
+    "author": "Predidit",
+    "type": "API",
     "version": "1.1",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   },
   {
     "name": "黑猫动漫",
+    "author": "Predidit",
+    "type": "XPath",
     "version": "1.1",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "author": "Predidit",
     "lastUpdate": 1792568540000
   }
 ]
