@@ -128,7 +128,7 @@ def collect() -> list[dict]:
 
 
 def render(entries: list[dict]) -> str:
-    return json.dumps(entries, ensure_ascii=False, indent=2) + "\n"
+    return json.dumps(entries, ensure_ascii=False, indent=2)
 
 
 def load_rule_meta() -> dict[str, dict]:
