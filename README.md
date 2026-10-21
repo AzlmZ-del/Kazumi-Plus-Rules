@@ -55,7 +55,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | --- | --- | --- | --- | --- |
 | AGE | <https://www.agedm.io> | XPath | 2.1 | 2026-10-21 |
 | Akianime | <https://www.akianime.cc> | WebView + XPath | 1.7 | 2026-10-21 |
-| E站弹幕网 | <https://m.ezdmw.org> | WebView + XPath | 1.7 | 2026-10-21 |
+| E站弹幕网 | <https://m.ezdmw.org> | WebView + XPath | 1.8 | 2026-10-21 |
 | giriGiriLove | <https://ani.girigirilove.com> | API 搜索 + XPath 章节 | 2.6 | 2026-10-21 |
 | MuteFun | <https://www.2kdm.com> | API 搜索 + XPath 章节 | 1.5 | 2026-10-21 |
 | MX动漫 | <https://www.dcc3.com> | WebView + XPath | 2.5 | 2026-10-21 |
