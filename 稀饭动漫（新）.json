@@ -56,15 +56,5 @@
             "url": "https://next.xifanacg.com/anime/@source/play/@episodeUrl",
             "query": {}
         }
-    },
-    "antiCrawlerConfig": {
-        "enabled": false,
-        "captchaType": 1,
-        "captchaImage": "",
-        "captchaInput": "",
-        "captchaButton": "",
-        "captchaDetectType": 1,
-        "captchaDetectValue": "",
-        "captchaScript": ""
     }
 }
