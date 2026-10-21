@@ -3,7 +3,7 @@
     "type": "anime",
     "name": "E站弹幕网",
     "author": "Predidit",
-    "version": "1.5",
+    "version": "1.6",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
@@ -18,7 +18,8 @@
     "searchName": ".//p",
     "searchResult": ".//a",
     "chapterMode": "xpath",
-    "chapterRoads": "//div[contains(@class,'line_button')]",
+    "chapterRoads": "//div[@class='line_button1'] | //div[@class='line_button3'] | //div[@class='line_button2']",
+    "chapterRoadName": "//div[@class='line_button1'] | //div[@class='line_button3'] | //div[@class='line_button2']",
     "chapterResult": "/self::*[@class='line_button_ban']/following-sibling::a[@class='circuit_switch_ban'] | /self::*[@class='line_button1']/following-sibling::a[@class='circuit_switch1'] | /self::*[@class='line_button3']/following-sibling::a[@class='circuit_switch3'] | /self::*[@class='line_button2']/following-sibling::a[@class='circuit_switch2']",
     "referer": "https://m.ezdmw.org/",
     "antiCrawlerConfig": {
