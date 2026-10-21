@@ -1,24 +1,16 @@
 {
     "api": "2",
-    "type": "anime",
     "name": "AGE",
     "author": "AzlmZ-del",
     "version": "1.9",
-    "muliSources": false,
-    "useWebview": false,
-    "useNativePlayer": false,
-    "usePost": false,
-    "useLegacyParser": false,
-    "adBlocker": false,
-    "userAgent": "",
     "baseURL": "https://www.agedm.io",
     "searchMode": "xpath",
     "searchURL": "https://www.agedm.io/search?query=@keyword",
-    "searchList": "//div[contains(@class,'cata_video_item')]",
+    "searchList": "//div[contains(@class,'cata')]",
     "searchName": ".//h5/a",
     "searchResult": ".//h5/a",
     "chapterMode": "xpath",
-    "chapterRoads": "//div[contains(@class,'tab-pane')]",
-    "chapterRoadName": "//button[starts-with(@data-bs-target,'#playlist-source-')]",
-    "chapterResult": ".//ul/li/a"
+    "chapterRoads": "//div[contains(@class,'tab-p')]",
+    "chapterRoadName": "//button[@data-bs-target]",
+    "chapterResult": ".//a"
 }
