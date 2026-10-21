@@ -19,6 +19,6 @@
     "searchResult": ".//h5/a",
     "chapterMode": "xpath",
     "chapterRoads": "//div[contains(@class,'tab-p')]",
-    "chapterRoadName": "//button[@data-bs-target]",
+    "chapterRoadName": "//button[contains(@data-bs-target,'playlist-source')]",
     "chapterResult": ".//a"
 }
