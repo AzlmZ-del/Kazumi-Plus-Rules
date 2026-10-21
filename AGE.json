@@ -14,11 +14,11 @@
     "baseURL": "https://www.agedm.io",
     "searchMode": "xpath",
     "searchURL": "https://www.agedm.io/search?query=@keyword",
-    "searchList": "//div[2]/div/section/div/div/div/div",
-    "searchName": "//div/div[2]/h5/a",
-    "searchResult": "//div/div[2]/h5/a",
+    "searchList": "//div[contains(@class,'cata_video_item')]",
+    "searchName": ".//h5/a",
+    "searchResult": ".//h5/a",
     "chapterMode": "xpath",
-    "chapterRoads": "//div[2]/div/section/div/div[2]/div[2]/div[2]/div",
-    "chapterRoadName": "//ul[contains(@class,'nav-pills')]/li/button",
-    "chapterResult": "//ul/li/a"
+    "chapterRoads": "//div[contains(@class,'tab-pane')]",
+    "chapterRoadName": "//button[starts-with(@data-bs-target,'#playlist-source-')]",
+    "chapterResult": ".//ul/li/a"
 }
