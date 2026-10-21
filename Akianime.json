@@ -15,10 +15,10 @@
     "searchMode": "xpath",
     "searchURL": "https://www.akianime.cc/bgmsearch/-------------.html?wd=@keyword",
     "searchList": "//div[contains(@class,'search-list')]",
-    "searchName": ".//a[starts-with(@href,'/bgmdetail/')]/h3",
-    "searchResult": ".//a[starts-with(@href,'/bgmdetail/')]",
+    "searchName": ".//h3",
+    "searchResult": ".//h3/..",
     "chapterMode": "xpath",
-    "chapterRoads": "//ul[contains(@class,'anthology-list-play')]",
-    "chapterRoadName": "//div[contains(@class,'anthology-tab')]//a",
+    "chapterRoads": "//ul[contains(@class,'anthology-list')]",
+    "chapterRoadName": "//a[contains(@class,'vod-playerUrl')]",
     "chapterResult": ".//li/a"
 }
