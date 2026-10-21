@@ -80,6 +80,20 @@ def load_rule(path: Path) -> dict:
     return data
 
 
+# 规则文件里的 api 键 → 索引里给客户端看的源类型。
+# 1 = 纯 API 规则，2 = 纯 XPath 规则，3 = 两种混用。
+RULE_TYPES = {
+    "1": "API",
+    "2": "XPath",
+    "3": "混合",
+}
+
+
+def rule_type(rule: dict) -> str:
+    """把规则文件的 api 值翻成索引里的 type 字段。"""
+    return RULE_TYPES.get(str(rule.get("api", "1")), "API")
+
+
 def build_entry(path: Path, rule: dict) -> dict:
     missing = [field for field in REQUIRED_FIELDS if field not in rule]
     if missing:
@@ -102,12 +116,15 @@ def build_entry(path: Path, rule: dict) -> dict:
 
     stamp = git_commit_ms(path) or mtime_ms(path)
 
+    # 键序固定为 name/author/type/version/useNativePlayer/antiCrawlerEnabled/lastUpdate，
+    # 客户端与 README 都按这个顺序读，不要随手调换。
     return {
         "name": name,
+        "author": str(rule.get("author") or DEFAULT_AUTHOR),
+        "type": rule_type(rule),
         "version": str(rule.get("version", "1.0")),
         "useNativePlayer": bool(rule.get("useNativePlayer", True)),
         "antiCrawlerEnabled": anti_enabled,
-        "author": str(rule.get("author") or DEFAULT_AUTHOR),
         "lastUpdate": stamp,
     }
 
