@@ -19,5 +19,6 @@
     "searchResult": ".//a[starts-with(@href,'/bgmdetail/')]",
     "chapterMode": "xpath",
     "chapterRoads": "//ul[contains(@class,'anthology-list-play')]",
+    "chapterRoadName": "//div[contains(@class,'anthology-tab')]//a",
     "chapterResult": ".//li/a"
 }
