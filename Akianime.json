@@ -18,7 +18,7 @@
     "searchName": ".//h3",
     "searchResult": ".//h3/..",
     "chapterMode": "xpath",
-    "chapterRoads": "//ul[contains(@class,'anthology-list')]",
-    "chapterRoadName": "//a[contains(@class,'vod-playerUrl')]",
+    "chapterRoads": "//ul[contains(@class,'play')]",
+    "chapterRoadName": "//a[contains(@class,'playerUrl')]",
     "chapterResult": ".//li/a"
 }
