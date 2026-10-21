@@ -12,14 +12,11 @@
     "adBlocker": false,
     "userAgent": "",
     "baseURL": "https://next.xifanacg.com",
+    "searchMode": "api",
     "searchURL": "",
     "searchList": "",
     "searchName": "",
     "searchResult": "",
-    "chapterRoads": "",
-    "chapterResult": "",
-    "searchMode": "api",
-    "chapterMode": "api",
     "searchApiConfig": {
         "request": {
             "method": "POST",
@@ -39,6 +36,9 @@
         "namePath": "$.title",
         "sourcePath": "$.id"
     },
+    "chapterMode": "api",
+    "chapterRoads": "",
+    "chapterResult": "",
     "chapterApiConfig": {
         "request": {
             "method": "POST",

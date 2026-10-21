@@ -12,15 +12,11 @@
     "adBlocker": false,
     "userAgent": "",
     "baseURL": "https://www.moonci.com",
+    "searchMode": "api",
     "searchURL": "",
     "searchList": "",
     "searchName": "",
     "searchResult": "",
-    "chapterRoads": "//div[contains(@class, 'hl-play-source')]//ul[contains(@class, 'hl-plays-list')]",
-    "chapterResult": ".//a[contains(@href, '/play/')]",
-    "referer": "",
-    "searchMode": "api",
-    "chapterMode": "xpath",
     "searchApiConfig": {
         "request": {
             "method": "GET",
@@ -35,6 +31,10 @@
         "sourcePath": "$.id",
         "sourceTemplate": "https://www.moonci.com/anime/@source.html"
     },
+    "chapterMode": "xpath",
+    "chapterRoads": "//div[contains(@class, 'hl-play-source')]//ul[contains(@class, 'hl-plays-list')]",
+    "chapterResult": ".//a[contains(@href, '/play/')]",
+    "referer": "",
     "antiCrawlerConfig": {
         "enabled": false,
         "captchaType": 1,

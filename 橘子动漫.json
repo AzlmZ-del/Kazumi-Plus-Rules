@@ -12,15 +12,11 @@
     "adBlocker": false,
     "userAgent": "",
     "baseURL": "https://www.mgnacg.com",
+    "searchMode": "api",
     "searchURL": "",
     "searchList": "",
     "searchName": "",
     "searchResult": "",
-    "chapterRoads": "//ul[@class='anthology-list-play size']",
-    "chapterResult": ".//li/a",
-    "referer": "",
-    "searchMode": "api",
-    "chapterMode": "xpath",
     "searchApiConfig": {
         "request": {
             "method": "GET",
@@ -33,5 +29,9 @@
         "listPath": "$.list[*]",
         "namePath": "$.name",
         "sourcePath": "$.id"
-    }
+    },
+    "chapterMode": "xpath",
+    "chapterRoads": "//ul[@class='anthology-list-play size']",
+    "chapterResult": ".//li/a",
+    "referer": ""
 }

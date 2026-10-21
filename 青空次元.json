@@ -12,15 +12,11 @@
     "adBlocker": true,
     "userAgent": "",
     "baseURL": "https://www.sorani.net",
+    "searchMode": "api",
     "searchURL": "",
     "searchList": "",
     "searchName": "",
     "searchResult": "",
-    "chapterRoads": "",
-    "chapterResult": "",
-    "referer": "https://www.sorani.net/",
-    "searchMode": "api",
-    "chapterMode": "api",
     "searchApiConfig": {
         "request": {
             "method": "GET",
@@ -38,6 +34,9 @@
         "namePath": "$.title",
         "sourcePath": "$.id"
     },
+    "chapterMode": "api",
+    "chapterRoads": "",
+    "chapterResult": "",
     "chapterApiConfig": {
         "request": {
             "method": "GET",
@@ -54,6 +53,7 @@
             "query": {}
         }
     },
+    "referer": "https://www.sorani.net/",
     "antiCrawlerConfig": {
         "enabled": false,
         "captchaType": 1,

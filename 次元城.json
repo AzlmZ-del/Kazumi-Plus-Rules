@@ -12,15 +12,11 @@
     "adBlocker": false,
     "userAgent": "",
     "baseURL": "https://www.cycani.org",
+    "searchMode": "api",
     "searchURL": "",
     "searchList": "",
     "searchName": "",
     "searchResult": "",
-    "chapterRoads": "",
-    "chapterResult": "",
-    "referer": "https://www.cycani.org/",
-    "searchMode": "api",
-    "chapterMode": "api",
     "searchApiConfig": {
         "request": {
             "method": "GET",
@@ -36,6 +32,9 @@
         "namePath": "$.title",
         "sourcePath": "$.video_id"
     },
+    "chapterMode": "api",
+    "chapterRoads": "",
+    "chapterResult": "",
     "chapterApiConfig": {
         "request": {
             "method": "GET",
@@ -71,6 +70,7 @@
             "urlPath": "$.data.url"
         }
     },
+    "referer": "https://www.cycani.org/",
     "auth": {
         "login": {
             "method": "POST",
