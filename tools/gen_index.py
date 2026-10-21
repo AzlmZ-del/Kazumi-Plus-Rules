@@ -44,7 +44,7 @@ TABLE_UTC_OFFSET = 8 * 3600
 # 规则里没有 author 字段时写进索引的作者名，改成你自己的。
 DEFAULT_AUTHOR = "AzlmZ-del"
 
-REQUIRED_FIELDS = ("name", "version")
+REQUIRED_FIELDS = ("name", "version", "useNativePlayer")
 
 
 def git_commit_ms(path: Path) -> int | None:
@@ -105,7 +105,7 @@ def build_entry(path: Path, rule: dict) -> dict:
     return {
         "name": name,
         "version": str(rule.get("version", "1.0")),
-        "useNativePlayer": bool(rule.get("useNativePlayer", False)),
+        "useNativePlayer": bool(rule.get("useNativePlayer", True)),
         "antiCrawlerEnabled": anti_enabled,
         "author": str(rule.get("author") or DEFAULT_AUTHOR),
         "lastUpdate": stamp,
