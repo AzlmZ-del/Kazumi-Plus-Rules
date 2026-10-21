@@ -14,6 +14,6 @@
     "searchName": "//div/div[2]/h5/a",
     "searchResult": "//div/div[2]/h5/a",
     "chapterRoads": "//div[2]/div/section/div/div[2]/div[2]/div[2]/div",
-    "chapterResult": "//ul/li/a",
-    "chapterRoadName": "//ul[contains(@class,'nav-pills')]/li/button"
+    "chapterRoadName": "//ul[contains(@class,'nav-pills')]/li/button",
+    "chapterResult": "//ul/li/a"
 }
