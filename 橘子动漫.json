@@ -13,6 +13,12 @@
     "userAgent": "",
     "baseURL": "https://www.mgnacg.com",
     "searchURL": "",
+    "searchList": "",
+    "searchName": "",
+    "searchResult": "",
+    "chapterRoads": "//ul[@class='anthology-list-play size']",
+    "chapterResult": ".//li/a",
+    "referer": "",
     "searchMode": "api",
     "chapterMode": "xpath",
     "searchApiConfig": {
@@ -27,11 +33,5 @@
         "listPath": "$.list[*]",
         "namePath": "$.name",
         "sourcePath": "$.id"
-    },
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
-    "chapterRoads": "//ul[@class='anthology-list-play size']",
-    "chapterResult": ".//li/a",
-    "referer": ""
+    }
 }

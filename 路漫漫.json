@@ -13,6 +13,12 @@
     "userAgent": "",
     "baseURL": "https://www.lmm85.com",
     "searchURL": "",
+    "searchList": "",
+    "searchName": "",
+    "searchResult": "",
+    "chapterRoads": "//div[contains(@class, 'module-player-list')]",
+    "chapterResult": ".//a[contains(@href, '/play/')]",
+    "referer": "",
     "searchMode": "api",
     "chapterMode": "xpath",
     "searchApiConfig": {
@@ -28,11 +34,5 @@
         "namePath": "$.name",
         "sourcePath": "$.id",
         "sourceTemplate": "https://www.lmm85.com/index.php/vod/detail/id/@source.html"
-    },
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
-    "chapterRoads": "//div[contains(@class, 'module-player-list')]",
-    "chapterResult": ".//a[contains(@href, '/play/')]",
-    "referer": ""
+    }
 }

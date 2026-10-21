@@ -13,6 +13,12 @@
     "userAgent": "",
     "baseURL": "https://www.sbdl.cc",
     "searchURL": "",
+    "searchList": "",
+    "searchName": "",
+    "searchResult": "",
+    "chapterRoads": "//div[starts-with(@id, 'playlist')][contains(@class, 'lists-box')]",
+    "chapterResult": ".//a[contains(@href, '/index.php/vod/play/')]",
+    "referer": "",
     "searchMode": "api",
     "chapterMode": "xpath",
     "searchApiConfig": {
@@ -28,11 +34,5 @@
         "namePath": "$.name",
         "sourcePath": "$.id",
         "sourceTemplate": "https://www.sbdl.cc/index.php/vod/detail/id/@source.html"
-    },
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
-    "chapterRoads": "//div[starts-with(@id, 'playlist')][contains(@class, 'lists-box')]",
-    "chapterResult": ".//a[contains(@href, '/index.php/vod/play/')]",
-    "referer": ""
+    }
 }

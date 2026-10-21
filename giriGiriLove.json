@@ -12,6 +12,13 @@
     "adBlocker": false,
     "userAgent": "",
     "baseURL": "https://ani.girigirilove.com",
+    "searchURL": "",
+    "searchList": "",
+    "searchName": "",
+    "searchResult": "",
+    "chapterRoads": "//ul[@class='anthology-list-play size']",
+    "chapterResult": "//li/a",
+    "referer": "",
     "searchMode": "api",
     "chapterMode": "xpath",
     "searchApiConfig": {
@@ -27,12 +34,5 @@
         "namePath": "$.name",
         "sourcePath": "$.id",
         "sourceTemplate": "https://ani.girigirilove.com/GV@source/"
-    },
-    "searchURL": "",
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
-    "chapterRoads": "//ul[@class='anthology-list-play size']",
-    "chapterResult": "//li/a",
-    "referer": ""
+    }
 }

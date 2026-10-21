@@ -12,6 +12,13 @@
     "adBlocker": false,
     "userAgent": "",
     "baseURL": "https://www.2kdm.com/voddetail",
+    "searchURL": "",
+    "searchList": "",
+    "searchName": "",
+    "searchResult": "",
+    "chapterRoads": "//div[contains(@class,'module-play-list-content')]",
+    "chapterResult": ".//a[contains(@class,'module-play-list-link')]",
+    "referer": "",
     "searchMode": "api",
     "chapterMode": "xpath",
     "searchApiConfig": {
@@ -26,12 +33,5 @@
         "listPath": "$.list[*]",
         "namePath": "$.name",
         "sourcePath": "$.id"
-    },
-    "searchURL": "",
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
-    "chapterRoads": "//div[contains(@class,'module-play-list-content')]",
-    "chapterResult": ".//a[contains(@class,'module-play-list-link')]",
-    "referer": ""
+    }
 }

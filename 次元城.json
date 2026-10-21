@@ -71,16 +71,6 @@
             "urlPath": "$.data.url"
         }
     },
-    "antiCrawlerConfig": {
-        "enabled": false,
-        "captchaType": 1,
-        "captchaImage": "",
-        "captchaInput": "",
-        "captchaButton": "",
-        "captchaDetectType": 1,
-        "captchaDetectValue": "",
-        "captchaScript": ""
-    },
     "auth": {
         "login": {
             "method": "POST",
@@ -101,5 +91,15 @@
         "refreshOnStatus": [
             401
         ]
+    },
+    "antiCrawlerConfig": {
+        "enabled": false,
+        "captchaType": 1,
+        "captchaImage": "",
+        "captchaInput": "",
+        "captchaButton": "",
+        "captchaDetectType": 1,
+        "captchaDetectValue": "",
+        "captchaScript": ""
     }
 }
