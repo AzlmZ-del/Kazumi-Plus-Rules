@@ -3,7 +3,7 @@
     "type": "anime",
     "name": "Akianime",
     "author": "Predidit",
-    "version": "1.4",
+    "version": "1.5",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
@@ -14,10 +14,10 @@
     "baseURL": "https://www.akianime.cc",
     "searchMode": "xpath",
     "searchURL": "https://www.akianime.cc/bgmsearch/-------------.html?wd=@keyword",
-    "searchList": "//div[@class='vod-detail style-detail cor4 search-list']",
-    "searchName": "//div/div[2]/a/h3",
-    "searchResult": "//div/div[2]/div/div[1]/a",
+    "searchList": "//div[contains(@class,'search-list')]",
+    "searchName": ".//a[starts-with(@href,'/bgmdetail/')]/h3",
+    "searchResult": ".//a[starts-with(@href,'/bgmdetail/')]",
     "chapterMode": "xpath",
-    "chapterRoads": "//ul[@class='anthology-list-play size']",
-    "chapterResult": "//li/a"
+    "chapterRoads": "//ul[contains(@class,'anthology-list-play')]",
+    "chapterResult": ".//li/a"
 }
