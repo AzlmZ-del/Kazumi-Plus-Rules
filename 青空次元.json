@@ -13,10 +13,6 @@
     "userAgent": "",
     "baseURL": "https://www.sorani.net",
     "searchMode": "api",
-    "searchURL": "",
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
     "searchApiConfig": {
         "request": {
             "method": "GET",
@@ -35,8 +31,6 @@
         "sourcePath": "$.id"
     },
     "chapterMode": "api",
-    "chapterRoads": "",
-    "chapterResult": "",
     "chapterApiConfig": {
         "request": {
             "method": "GET",

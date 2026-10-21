@@ -13,10 +13,6 @@
     "userAgent": "",
     "baseURL": "https://www.cycani.org",
     "searchMode": "api",
-    "searchURL": "",
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
     "searchApiConfig": {
         "request": {
             "method": "GET",
@@ -33,8 +29,6 @@
         "sourcePath": "$.video_id"
     },
     "chapterMode": "api",
-    "chapterRoads": "",
-    "chapterResult": "",
     "chapterApiConfig": {
         "request": {
             "method": "GET",

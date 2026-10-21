@@ -13,10 +13,6 @@
     "userAgent": "",
     "baseURL": "https://ani.girigirilove.com",
     "searchMode": "api",
-    "searchURL": "",
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
     "searchApiConfig": {
         "request": {
             "method": "GET",

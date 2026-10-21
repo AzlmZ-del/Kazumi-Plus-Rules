@@ -13,10 +13,6 @@
     "userAgent": "",
     "baseURL": "https://www.2kdm.com/voddetail",
     "searchMode": "api",
-    "searchURL": "",
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
     "searchApiConfig": {
         "request": {
             "method": "GET",

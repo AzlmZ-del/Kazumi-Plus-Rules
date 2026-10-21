@@ -13,10 +13,6 @@
     "userAgent": "",
     "baseURL": "https://www.moonci.com",
     "searchMode": "api",
-    "searchURL": "",
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
     "searchApiConfig": {
         "request": {
             "method": "GET",

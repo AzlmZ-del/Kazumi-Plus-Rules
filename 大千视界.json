@@ -13,10 +13,6 @@
     "userAgent": "",
     "baseURL": "https://www.sbdl.cc",
     "searchMode": "api",
-    "searchURL": "",
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
     "searchApiConfig": {
         "request": {
             "method": "GET",

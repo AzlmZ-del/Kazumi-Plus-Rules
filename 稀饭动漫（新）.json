@@ -13,10 +13,6 @@
     "userAgent": "",
     "baseURL": "https://next.xifanacg.com",
     "searchMode": "api",
-    "searchURL": "",
-    "searchList": "",
-    "searchName": "",
-    "searchResult": "",
     "searchApiConfig": {
         "request": {
             "method": "POST",
@@ -37,8 +33,6 @@
         "sourcePath": "$.id"
     },
     "chapterMode": "api",
-    "chapterRoads": "",
-    "chapterResult": "",
     "chapterApiConfig": {
         "request": {
             "method": "POST",
