@@ -145,9 +145,9 @@
   },
   {
     "name": "稀饭动漫（旧）",
-    "author": "Predidit",
+    "author": "小鲸鱼",
     "type": "XPath",
-    "version": "1.2",
+    "version": "1.3",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
     "lastUpdate": 1792568540000
