@@ -39,10 +39,10 @@
     "name": "Hanime1",
     "author": "小鲸鱼",
     "type": "XPath",
-    "version": "0.2",
+    "version": "0.3",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1792696741000
+    "lastUpdate": 1792701499000
   },
   {
     "name": "MuteFun",
