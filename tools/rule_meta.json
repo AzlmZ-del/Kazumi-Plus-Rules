@@ -74,5 +74,9 @@
   "MX动漫": {
     "site": "https://www.dcc3.com",
     "mode": "WebView + XPath"
+  },
+  "Hanime1": {
+    "site": "https://hanime1.me",
+    "mode": "XPath"
   }
 }
