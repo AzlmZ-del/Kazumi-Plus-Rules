@@ -19,7 +19,7 @@
     "searchResult": "/self::*",
     "chapterMode": "xpath",
     "chapterRoads": "//div[contains(@class,\"desktop-playlist-flex\")]//div[@id=\"playlist-scroll\"]",
-    "chapterResult": "-.//h4[contains(@class,\"video-title\")]/a",
     "chapterRoadName": "//div[contains(@class,\"desktop-playlist-flex\")]//div[@id=\"playlist-top-block\"]//h4/a",
+    "chapterResult": "-.//h4[contains(@class,\"video-title\")]/a",
     "referer": "https://hanime1.me/"
 }
