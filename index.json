@@ -36,6 +36,15 @@
     "lastUpdate": 1792568540000
   },
   {
+    "name": "Hanime1",
+    "author": "小鲸鱼",
+    "type": "XPath",
+    "version": "0.1",
+    "useNativePlayer": false,
+    "antiCrawlerEnabled": false,
+    "lastUpdate": 1792692616000
+  },
+  {
     "name": "MuteFun",
     "author": "Predidit",
     "type": "混合",
