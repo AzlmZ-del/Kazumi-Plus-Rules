@@ -3,7 +3,7 @@
     "type": "anime",
     "name": "Hanime1",
     "author": "小鲸鱼",
-    "version": "0.2",
+    "version": "0.3",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
@@ -18,7 +18,8 @@
     "searchName": ".//div[@class=\"title\" or @class=\"home-rows-videos-title\"]",
     "searchResult": "/self::*",
     "chapterMode": "xpath",
-    "chapterRoads": "",
-    "chapterResult": "",
+    "chapterRoads": "//div[contains(@class,\"desktop-playlist-flex\")]//div[@id=\"playlist-scroll\"]",
+    "chapterResult": "-.//h4[contains(@class,\"video-title\")]/a",
+    "chapterRoadName": "//div[contains(@class,\"desktop-playlist-flex\")]//div[@id=\"playlist-top-block\"]//h4/a",
     "referer": "https://hanime1.me/"
 }
