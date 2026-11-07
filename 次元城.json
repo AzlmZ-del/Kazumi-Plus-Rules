@@ -1,44 +1,58 @@
 {
-    "api": "1",
+    "api": "9",
     "type": "anime",
     "name": "次元城",
-    "author": "AzlmZ-del",
-    "version": "2.1",
+    "author": "小鲸鱼",
+    "version": "2.2",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
     "usePost": false,
     "useLegacyParser": false,
     "adBlocker": false,
+    "directConnection": false,
     "userAgent": "",
     "baseURL": "https://www.cycani.org",
     "searchMode": "api",
     "searchApiConfig": {
         "request": {
             "method": "GET",
-            "url": "https://www.cycani.org/api/videos/search?q=@keyword&page=1&page_size=20",
+            "url": "https://www.cycani.org/api/videos/search",
             "headers": {
                 "X-App-Name": "cyc_web",
                 "X-App-Version": "cycweb",
                 "X-Time-Zone": "Asia/Shanghai",
                 "Accept": "application/json, text/plain, */*"
-            }
+            },
+            "query": {
+                "q": "@keyword",
+                "page": "1",
+                "page_size": "20"
+            },
+            "bodyType": "none"
         },
         "listPath": "$.data.list[*]",
         "namePath": "$.title",
-        "sourcePath": "$.video_id"
+        "sourcePath": "$.video_id",
+        "sourceTemplate": ""
     },
     "chapterMode": "api",
     "chapterApiConfig": {
         "request": {
             "method": "GET",
-            "url": "https://www.cycani.org/api/videos/@source/sections?player_code=cychub&page=1&page_size=100",
+            "url": "https://www.cycani.org/api/videos/@source/sections",
             "headers": {
                 "X-App-Name": "cyc_web",
                 "X-App-Version": "cycweb",
                 "X-Time-Zone": "Asia/Shanghai",
                 "Accept": "application/json, text/plain, */*"
-            }
+            },
+            "query": {
+                "player_code": "cychub",
+                "page": "1",
+                "page_size": "100"
+            },
+            "bodyType": "none"
         },
         "format": "nested",
         "roadsPath": "",
@@ -50,6 +64,7 @@
             "url": "https://www.cycani.org/api/v2/sections/@episodeUrl/play-url",
             "query": {}
         },
+        "variables": {},
         "play": {
             "request": {
                 "method": "GET",
@@ -59,13 +74,16 @@
                     "X-App-Version": "cycweb",
                     "X-Time-Zone": "Asia/Shanghai",
                     "Accept": "application/json, text/plain, */*"
-                }
+                },
+                "query": {},
+                "bodyType": "none"
             },
             "urlPath": "$.data.url"
         }
     },
     "referer": "https://www.cycani.org/",
     "auth": {
+        "enabled": true,
         "login": {
             "method": "POST",
             "url": "https://www.cycani.org/api/auth/login",
@@ -75,6 +93,7 @@
                 "X-Time-Zone": "Asia/Shanghai",
                 "Accept": "application/json, text/plain, */*"
             },
+            "query": {},
             "bodyType": "json",
             "body": {
                 "username": "@username",
@@ -82,6 +101,8 @@
             }
         },
         "tokenPath": "$.data.token",
+        "headerName": "Authorization",
+        "tokenPrefix": "",
         "refreshOnStatus": [
             401
         ]

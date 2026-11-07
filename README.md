@@ -69,7 +69,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | 大千视界 | <https://www.sbdl.cc> | API 搜索 + XPath 章节 | 1.3 | 2026-10-21 |
 | 月之祠 | <https://www.moonci.com> | API 搜索 + XPath 章节 | 1.2 | 2026-10-21 |
 | 橘子动漫 | <https://www.mgnacg.com> | API 搜索 + XPath 章节 | 1.3 | 2026-10-21 |
-| 次元城 | <https://www.cycani.org> | API | 2.1 | 2026-10-21 |
+| 次元城 | <https://www.cycani.org> | API | 2.2 | 2026-10-21 |
 | 路漫漫 | <https://www.lmm85.com> | API 搜索 + XPath 章节 | 2.4 | 2026-10-21 |
 | 青空次元 | <https://www.sorani.net> | API | 1.1 | 2026-10-21 |
 | 黑猫动漫 | <https://www.baimaodm.com> | WebView + XPath | 1.1 | 2026-10-21 |

@@ -127,9 +127,9 @@
   },
   {
     "name": "次元城",
-    "author": "AzlmZ-del",
+    "author": "小鲸鱼",
     "type": "API",
-    "version": "2.1",
+    "version": "2.2",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
     "lastUpdate": 1792568540000
