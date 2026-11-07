@@ -171,13 +171,18 @@ def rule_base_url(name: str) -> str:
 
 
 def render_table(entries: list[dict]) -> str:
-    """README 里「收录的源」那张表，版本与日期来自 index.json。"""
+    """README 里「收录的源」那张表，版本与日期来自 index.json。
+
+    行序按 lastUpdate 降序（最近更新的排最上）；index.json 本身保持 name 序，
+    客户端按 name 索引不依赖顺序，只有这张人看的表格才按时间排。
+    """
     meta = load_rule_meta()
+    by_update = sorted(entries, key=lambda item: item["lastUpdate"], reverse=True)
     lines = [
         "| 规则名 | 站点 | 模式 | 版本 | 最后更新 |",
         "| --- | --- | --- | --- | --- |",
     ]
-    for entry in entries:
+    for entry in by_update:
         name = entry["name"]
         info = meta.get(name, {})
         site = str(info.get("site") or rule_base_url(name))

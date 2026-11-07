@@ -53,11 +53,13 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
+| 稀饭动漫（新） | <https://next.xifanacg.com> | API | 1.3 | 2026-11-07 |
+| Hanime1 | <https://hanime1.me> | XPath | 0.3 | 2026-10-23 |
+| 稀饭动漫（旧） | <https://dm1.xfdm.pro> | WebView + XPath | 1.3 | 2026-10-23 |
+| E站弹幕网 | <https://m.ezdmw.org> | WebView + XPath | 1.8 | 2026-10-21 |
 | AGE | <https://www.agedm.io> | XPath | 2.1 | 2026-10-21 |
 | Akianime | <https://www.akianime.cc> | WebView + XPath | 1.7 | 2026-10-21 |
-| E站弹幕网 | <https://m.ezdmw.org> | WebView + XPath | 1.8 | 2026-10-21 |
 | giriGiriLove | <https://ani.girigirilove.com> | API 搜索 + XPath 章节 | 2.6 | 2026-10-21 |
-| Hanime1 | <https://hanime1.me> | XPath | 0.3 | 2026-10-23 |
 | MuteFun | <https://www.2kdm.com> | API 搜索 + XPath 章节 | 1.5 | 2026-10-21 |
 | MX动漫 | <https://www.dcc3.com> | WebView + XPath | 2.5 | 2026-10-21 |
 | omofuna | <https://www.omofuna.com> | XPath | 1.1 | 2026-10-21 |
@@ -68,8 +70,6 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | 月之祠 | <https://www.moonci.com> | API 搜索 + XPath 章节 | 1.2 | 2026-10-21 |
 | 橘子动漫 | <https://www.mgnacg.com> | API 搜索 + XPath 章节 | 1.3 | 2026-10-21 |
 | 次元城 | <https://www.cycani.org> | API | 2.1 | 2026-10-21 |
-| 稀饭动漫（新） | <https://next.xifanacg.com> | API | 1.3 | 2026-11-07 |
-| 稀饭动漫（旧） | <https://dm1.xfdm.pro> | WebView + XPath | 1.3 | 2026-10-23 |
 | 路漫漫 | <https://www.lmm85.com> | API 搜索 + XPath 章节 | 2.4 | 2026-10-21 |
 | 青空次元 | <https://www.sorani.net> | API | 1.1 | 2026-10-21 |
 | 黑猫动漫 | <https://www.baimaodm.com> | WebView + XPath | 1.1 | 2026-10-21 |
