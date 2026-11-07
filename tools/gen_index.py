@@ -117,17 +117,21 @@ def build_entry(path: Path, rule: dict) -> dict:
 
     stamp = git_commit_ms(path) or mtime_ms(path)
 
-    # 键序固定为 name/author/type/version/useNativePlayer/antiCrawlerEnabled/lastUpdate，
-    # 客户端与 README 都按这个顺序读，不要随手调换。
-    return {
+    # 键序固定为 name/author/type/version/directConnection/useNativePlayer/
+    # antiCrawlerEnabled/lastUpdate，客户端与 README 都按这个顺序读，不要随手调换。
+    # directConnection 仅在规则显式声明时写出，未写的源不出现该键。
+    entry = {
         "name": name,
         "author": str(rule.get("author") or DEFAULT_AUTHOR),
         "type": rule_type(rule),
         "version": str(rule.get("version", "1.0")),
-        "useNativePlayer": bool(rule.get("useNativePlayer", True)),
-        "antiCrawlerEnabled": anti_enabled,
-        "lastUpdate": stamp,
     }
+    if "directConnection" in rule:
+        entry["directConnection"] = bool(rule["directConnection"])
+    entry["useNativePlayer"] = bool(rule.get("useNativePlayer", True))
+    entry["antiCrawlerEnabled"] = anti_enabled
+    entry["lastUpdate"] = stamp
+    return entry
 
 
 def collect() -> list[dict]:

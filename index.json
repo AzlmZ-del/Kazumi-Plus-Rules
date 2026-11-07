@@ -130,6 +130,7 @@
     "author": "小鲸鱼",
     "type": "API",
     "version": "2.3",
+    "directConnection": true,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
     "lastUpdate": 1794041118000
@@ -139,6 +140,7 @@
     "author": "小鲸鱼",
     "type": "API",
     "version": "1.3",
+    "directConnection": true,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
     "lastUpdate": 1794035338000
@@ -148,6 +150,7 @@
     "author": "小鲸鱼",
     "type": "XPath",
     "version": "1.5",
+    "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
     "lastUpdate": 1794039616000
