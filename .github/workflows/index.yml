@@ -3,9 +3,11 @@ name: 重新生成规则索引
 on:
   push:
     branches: [main]
-    # 只由 index.json 组成的提交不再触发，避免自动提交形成循环
+    # 自动提交只含这两个文件；忽略它们才不会自我触发。
+    # 漏掉 README.md 会让 CI 的提交再触发一轮（靠第二轮 diff 为空才停）。
     paths-ignore:
       - "index.json"
+      - "README.md"
   workflow_dispatch:
 
 permissions:
