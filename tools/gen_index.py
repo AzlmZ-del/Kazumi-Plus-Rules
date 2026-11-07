@@ -80,18 +80,19 @@ def load_rule(path: Path) -> dict:
     return data
 
 
-# 规则文件里的 api 键 → 索引里给客户端看的源类型。
-# 1 = 纯 API 规则，2 = 纯 XPath 规则，3 = 两种混用。
-RULE_TYPES = {
-    "1": "API",
-    "2": "XPath",
-    "3": "混合",
-}
-
-
 def rule_type(rule: dict) -> str:
-    """把规则文件的 api 值翻成索引里的 type 字段。"""
-    return RULE_TYPES.get(str(rule.get("api", "1")), "API")
+    """由搜索/选集模式推导源类型，与客户端 Plugin.sourceTypeLabel 一致。
+
+    不看 api 键：那是「所需最低客户端级别」，纯 API 规则通常写 9，
+    拿它当类型用会落进默认分支。
+    """
+    search_is_api = str(rule.get("searchMode", "xpath")) == "api"
+    chapter_is_api = str(rule.get("chapterMode", "xpath")) == "api"
+    if search_is_api and chapter_is_api:
+        return "API"
+    if not search_is_api and not chapter_is_api:
+        return "XPath"
+    return "混合"
 
 
 def build_entry(path: Path, rule: dict) -> dict:
