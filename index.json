@@ -172,11 +172,11 @@
     "name": "青空次元",
     "author": "小鲸鱼",
     "type": "API",
-    "version": "1.2",
-    "directConnection": true,
+    "version": "1.3",
+    "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1794169215000
+    "lastUpdate": 1794171100000
   },
   {
     "name": "黑猫动漫",
