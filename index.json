@@ -170,12 +170,13 @@
   },
   {
     "name": "青空次元",
-    "author": "Predidit",
+    "author": "小鲸鱼",
     "type": "API",
-    "version": "1.1",
+    "version": "1.2",
+    "directConnection": true,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1792568540000
+    "lastUpdate": 1794169215000
   },
   {
     "name": "黑猫动漫",
