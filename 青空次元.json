@@ -1,17 +1,19 @@
 {
-    "api": "1",
+    "api": "9",
     "type": "anime",
     "name": "青空次元",
-    "author": "Predidit",
-    "version": "1.1",
+    "author": "小鲸鱼",
+    "version": "1.2",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
     "usePost": false,
     "useLegacyParser": false,
     "adBlocker": true,
-    "userAgent": "",
+    "directConnection": true,
     "baseURL": "https://www.sorani.net",
+    "userAgent": "",
+    "referer": "https://www.sorani.net/",
     "searchMode": "api",
     "searchApiConfig": {
         "request": {
@@ -46,16 +48,5 @@
             "url": "https://www.sorani.net/anime/mal/@source/episode/@episodeUrl",
             "query": {}
         }
-    },
-    "referer": "https://www.sorani.net/",
-    "antiCrawlerConfig": {
-        "enabled": false,
-        "captchaType": 1,
-        "captchaImage": "",
-        "captchaInput": "",
-        "captchaButton": "",
-        "captchaDetectType": 1,
-        "captchaDetectValue": "",
-        "captchaScript": ""
     }
 }
