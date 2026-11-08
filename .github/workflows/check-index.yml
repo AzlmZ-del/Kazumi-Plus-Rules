@@ -27,9 +27,3 @@ jobs:
             echo "::error::index.json 或 README 与规则文件不一致。请在本地运行 python tools/gen_index.py 后提交结果。"
             exit 1
           fi
-
-      - name: 列出有差异的条目（诊断用）
-        if: failure()
-        run: |
-          python3 tools/gen_index.py
-          git diff -- index.json README.md
