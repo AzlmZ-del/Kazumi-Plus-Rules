@@ -25,7 +25,7 @@
   },
   "稀饭动漫（旧）": {
     "site": "https://dm1.xfdm.pro",
-    "mode": "WebView + XPath"
+    "mode": "XPath"
   },
   "七色番": {
     "site": "https://www.7sefun.top",
