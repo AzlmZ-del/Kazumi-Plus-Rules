@@ -31,5 +31,6 @@
     },
     "chapterMode": "xpath",
     "chapterRoads": "//ul[@class*='hl-plays-list']",
+    "chapterRoadName": "//a[@class*='hl-tabs-btn']",
     "chapterResult": "//a[@href*='/play/']"
 }
