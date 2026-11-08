@@ -3,7 +3,7 @@
     "type": "anime",
     "name": "稀饭动漫（旧）",
     "author": "小鲸鱼",
-    "version": "1.6",
+    "version": "1.7",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
@@ -11,8 +11,9 @@
     "useLegacyParser": true,
     "adBlocker": false,
     "directConnection": false,
-    "userAgent": "",
     "baseURL": "https://dm1.xfdm.pro",
+    "userAgent": "",
+    "referer": "",
     "searchMode": "xpath",
     "searchURL": "https://dm1.xfdm.pro/search.html?wd=@keyword",
     "searchList": "//div[@class*='public-list-box']",
@@ -21,6 +22,5 @@
     "chapterMode": "xpath",
     "chapterRoads": "//ul[@class*='anthology-list-play']",
     "chapterRoadName": "//div[@class*='anthology-tab']//a",
-    "chapterResult": "//li/a",
-    "referer": ""
+    "chapterResult": "//li/a"
 }
