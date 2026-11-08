@@ -13,11 +13,11 @@
     "name": "Akianime",
     "author": "小鲸鱼",
     "type": "XPath",
-    "version": "1.9",
+    "version": "2.0",
     "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1794103598000
+    "lastUpdate": 1794163332000
   },
   {
     "name": "E站弹幕网",
