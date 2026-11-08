@@ -1,17 +1,19 @@
 {
-    "api": "3",
+    "api": "9",
     "type": "anime",
     "name": "月之祠",
-    "author": "Predidit",
-    "version": "1.2",
+    "author": "小鲸鱼",
+    "version": "1.3",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
     "usePost": false,
     "useLegacyParser": false,
     "adBlocker": false,
-    "userAgent": "",
+    "directConnection": false,
     "baseURL": "https://www.moonci.com",
+    "userAgent": "",
+    "referer": "",
     "searchMode": "api",
     "searchApiConfig": {
         "request": {
@@ -28,17 +30,6 @@
         "sourceTemplate": "https://www.moonci.com/anime/@source.html"
     },
     "chapterMode": "xpath",
-    "chapterRoads": "//div[contains(@class, 'hl-play-source')]//ul[contains(@class, 'hl-plays-list')]",
-    "chapterResult": ".//a[contains(@href, '/play/')]",
-    "referer": "",
-    "antiCrawlerConfig": {
-        "enabled": false,
-        "captchaType": 1,
-        "captchaImage": "",
-        "captchaInput": "",
-        "captchaButton": "",
-        "captchaDetectType": 1,
-        "captchaDetectValue": "",
-        "captchaScript": ""
-    }
+    "chapterRoads": "//ul[@class*='hl-plays-list']",
+    "chapterResult": "//a[@href*='/play/']"
 }
