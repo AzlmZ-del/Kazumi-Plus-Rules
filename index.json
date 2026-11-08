@@ -1,12 +1,13 @@
 [
   {
     "name": "AGE",
-    "author": "AzlmZ-del",
+    "author": "小鲸鱼",
     "type": "XPath",
-    "version": "2.1",
+    "version": "2.2",
+    "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1792569217000
+    "lastUpdate": 1794107159000
   },
   {
     "name": "Akianime",
