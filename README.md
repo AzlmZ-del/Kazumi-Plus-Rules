@@ -78,14 +78,26 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 ## 与官方版的兼容性
 
 `index.json` 与规则文件的**基础格式**完全按上游约定写，官方原版也能挂这个仓库。
-但下面这些字段只有 **Kazumi Plus** 认识，官方版会直接忽略：
+
+`searchMode` / `chapterMode` 的 API 取数（`searchApiConfig`、`chapterApiConfig`）
+与 `antiCrawlerConfig` 验证码流程**都是上游原生能力**，不是本仓库扩展——
+官方版从 0.1.x 就支持，`apiLevel` 只要不超过它能识别的级别就能直接跑。
+
+只有下面这几个字段是 **Kazumi Plus** 扩展，官方版会直接忽略：
 
 | 字段 | 用途 |
 |---|---|
-| `auth` | 规则登录流程、`tokenPath`、`refreshOnStatus` |
-| `searchApiConfig` / `chapterApiConfig` | API 模式取数（`searchMode: api`） |
-| `episodePage` / `play` | 播放直链接口 |
-| `antiCrawlerConfig` | 验证码流程 |
+| `auth` | 规则登录流程、`tokenPath`、`refreshOnStatus`、401 自动重登 |
+| `chapterApiConfig.play` | 播放直链接口（`request` + `urlPath`），绕开 WebView 直接取直链 |
+| `chapterApiConfig.episodePage` | 播放页构造模板（`url` + `query`），交给 WebView 做视频嗅探 |
+| `directConnection` | 规则级直连开关，搜索/详情/选集/播放全部绕过代理 |
 
-所以 `omofuni`、`omofuna` 这类 XPath 规则在官方版上能正常用；
-`次元城` 这种纯 API 规则**必须配 Kazumi Plus**，官方版装了也搜不出东西。
+几条实际影响：
+
+- `omofuni`、`omofuna` 这类纯 XPath 规则，官方版能正常用。
+- `次元城`、`稀饭动漫（新）`、`青空次元` 这类纯 API 源，官方版能搜索、能出章节，
+  但它们在 `chapterApiConfig` 里用了 `play` / `episodePage`，
+  这两个键官方版不认识，**播放环节会退化成 WebView 嗅探或直接失败**。
+- 官方版看不懂 `auth`，带登录的源在它那儿拿不到令牌，会按未登录处理。
+- 官方版没有 `directConnection`，一律走系统代理。挂 VPN 时这些源会变慢或连不上，
+  但那不是规则错。
