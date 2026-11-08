@@ -29,7 +29,7 @@
   },
   "七色番": {
     "site": "https://www.7sefun.top",
-    "mode": "WebView + XPath"
+    "mode": "XPath"
   },
   "Akianime": {
     "site": "https://www.akianime.cc",
@@ -37,7 +37,7 @@
   },
   "黑猫动漫": {
     "site": "https://www.baimaodm.com",
-    "mode": "WebView + XPath"
+    "mode": "XPath"
   },
   "大千视界": {
     "site": "https://www.sbdl.cc",
@@ -45,7 +45,7 @@
   },
   "动漫巴士": {
     "site": "https://dmbus.cc",
-    "mode": "WebView + XPath"
+    "mode": "XPath"
   },
   "青空次元": {
     "site": "https://www.sorani.net",
@@ -53,7 +53,7 @@
   },
   "E站弹幕网": {
     "site": "https://m.ezdmw.org",
-    "mode": "WebView + XPath"
+    "mode": "XPath"
   },
   "giriGiriLove": {
     "site": "https://ani.girigirilove.com",
@@ -73,7 +73,7 @@
   },
   "MX动漫": {
     "site": "https://www.dcc3.com",
-    "mode": "WebView + XPath"
+    "mode": "XPath"
   },
   "Hanime1": {
     "site": "https://hanime1.me",
