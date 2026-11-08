@@ -1,9 +1,9 @@
 name: 校验规则索引
 
 on:
+  # 只在 PR 与手动触发时校验。push 上不校验：index.yml 会在 push 后自动
+  # 重生成并提交索引，两个 workflow 同时跑会让每次改规则都红一次。
   pull_request:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
