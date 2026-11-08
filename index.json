@@ -111,13 +111,12 @@
   },
   {
     "name": "月之祠",
-    "author": "小鲸鱼",
+    "author": "Predidit",
     "type": "混合",
-    "version": "1.3",
-    "directConnection": false,
+    "version": "1.2",
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1794157924000
+    "lastUpdate": 1794158040000
   },
   {
     "name": "橘子动漫",
