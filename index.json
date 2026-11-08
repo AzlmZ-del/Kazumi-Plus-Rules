@@ -21,12 +21,13 @@
   },
   {
     "name": "E站弹幕网",
-    "author": "AzlmZ-del",
+    "author": "小鲸鱼",
     "type": "XPath",
-    "version": "1.8",
+    "version": "1.9",
+    "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1792585902000
+    "lastUpdate": 1794168604000
   },
   {
     "name": "giriGiriLove",
