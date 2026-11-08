@@ -33,7 +33,7 @@
   },
   "Akianime": {
     "site": "https://www.akianime.cc",
-    "mode": "WebView + XPath"
+    "mode": "XPath"
   },
   "黑猫动漫": {
     "site": "https://www.baimaodm.com",
