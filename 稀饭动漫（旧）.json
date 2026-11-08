@@ -1,9 +1,9 @@
 {
-    "api": "2",
+    "api": "9",
     "type": "anime",
     "name": "稀饭动漫（旧）",
     "author": "小鲸鱼",
-    "version": "1.5",
+    "version": "1.6",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
