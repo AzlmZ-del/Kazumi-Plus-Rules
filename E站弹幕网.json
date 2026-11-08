@@ -1,28 +1,26 @@
 {
-    "api": "2",
+    "api": "9",
     "type": "anime",
     "name": "E站弹幕网",
-    "author": "AzlmZ-del",
-    "version": "1.8",
+    "author": "小鲸鱼",
+    "version": "1.9",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
     "usePost": false,
     "useLegacyParser": false,
     "adBlocker": false,
-    "userAgent": "",
+    "directConnection": false,
     "baseURL": "https://m.ezdmw.org",
+    "userAgent": "",
+    "referer": "https://m.ezdmw.org/",
     "searchMode": "xpath",
     "searchURL": "https://m.ezdmw.org/Index/search.html?searchText=@keyword&page=0",
     "searchList": "//section[@id='some_drama']/div",
-    "searchName": ".//p",
-    "searchResult": ".//a",
+    "searchName": "//p",
+    "searchResult": "//a",
     "chapterMode": "xpath",
     "chapterRoads": "//div[@class='line_button1'] | //div[@class='line_button3'] | //div[@class='line_button2']",
     "chapterRoadName": "//div[@class='line_button1'] | //div[@class='line_button3'] | //div[@class='line_button2']",
-    "chapterResult": "-/self::*[@class='line_button_ban']/following-sibling::a[@class='circuit_switch_ban'] | /self::*[@class='line_button1']/following-sibling::a[@class='circuit_switch1'] | /self::*[@class='line_button3']/following-sibling::a[@class='circuit_switch3'] | /self::*[@class='line_button2']/following-sibling::a[@class='circuit_switch2']",
-    "referer": "https://m.ezdmw.org/",
-    "antiCrawlerConfig": {
-        "enabled": false
-    }
+    "chapterResult": "-/self::*[@class='line_button1']/following-sibling::a[@class='circuit_switch1'] | /self::*[@class='line_button3']/following-sibling::a[@class='circuit_switch3'] | /self::*[@class='line_button2']/following-sibling::a[@class='circuit_switch2']"
 }
