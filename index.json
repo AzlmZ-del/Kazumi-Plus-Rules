@@ -10,9 +10,10 @@
   },
   {
     "name": "Akianime",
-    "author": "AzlmZ-del",
+    "author": "小鲸鱼",
     "type": "XPath",
-    "version": "1.7",
+    "version": "1.8",
+    "directConnection": true,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
     "lastUpdate": 1792568540000
