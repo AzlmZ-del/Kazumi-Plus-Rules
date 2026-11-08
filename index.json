@@ -152,11 +152,11 @@
     "name": "稀饭动漫（旧）",
     "author": "小鲸鱼",
     "type": "XPath",
-    "version": "1.6",
+    "version": "1.7",
     "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1794104383000
+    "lastUpdate": 1794162846000
   },
   {
     "name": "路漫漫",
