@@ -53,10 +53,10 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
+| AGE | <https://www.agedm.io> | XPath | 2.3 | 2026-11-09 |
 | 稀饭动漫（旧） | <https://dm1.xfdm.pro> | XPath | 1.7 | 2026-11-09 |
 | 稀饭动漫（新） | <https://next.xifanacg.com> | API | 1.4 | 2026-11-09 |
 | 月之祠 | <https://www.moonci.com> | API 搜索 + XPath 章节 | 1.4 | 2026-11-09 |
-| AGE | <https://www.agedm.io> | XPath | 2.2 | 2026-11-08 |
 | Akianime | <https://www.akianime.cc> | XPath | 1.9 | 2026-11-08 |
 | 次元城 | <https://www.cycani.org> | API | 2.3 | 2026-11-07 |
 | Hanime1 | <https://hanime1.me> | XPath | 0.3 | 2026-10-23 |

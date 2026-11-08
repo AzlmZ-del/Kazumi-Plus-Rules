@@ -3,11 +3,11 @@
     "name": "AGE",
     "author": "小鲸鱼",
     "type": "XPath",
-    "version": "2.2",
+    "version": "2.3",
     "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1794107159000
+    "lastUpdate": 1794163130000
   },
   {
     "name": "Akianime",
