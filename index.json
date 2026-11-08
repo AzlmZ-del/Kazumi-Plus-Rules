@@ -105,12 +105,13 @@
   },
   {
     "name": "大千视界",
-    "author": "Predidit",
+    "author": "小鲸鱼",
     "type": "混合",
-    "version": "1.3",
+    "version": "1.4",
+    "directConnection": true,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1792568540000
+    "lastUpdate": 1794177362000
   },
   {
     "name": "月之祠",
