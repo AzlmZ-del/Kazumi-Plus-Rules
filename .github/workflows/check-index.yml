@@ -1,0 +1,35 @@
+name: 校验规则索引
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # gen_index.py 的 lastUpdate 取文件最后一次 git 提交时间，
+          # 浅克隆会让所有文件都拿到同一个 HEAD 时间，校验必然失败。
+          fetch-depth: 0
+
+      - name: 校验 index.json 与 README 是否为最新
+        run: |
+          if python3 tools/gen_index.py --check; then
+            echo "OK：index.json 与 README 都和规则文件一致"
+          else
+            echo "::error::index.json 或 README 与规则文件不一致。请在本地运行 python tools/gen_index.py 后提交结果。"
+            exit 1
+          fi
+
+      - name: 列出有差异的条目（诊断用）
+        if: failure()
+        run: |
+          python3 tools/gen_index.py
+          git diff -- index.json README.md
