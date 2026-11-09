@@ -53,6 +53,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
+| TvTFun | <https://www.tvtfun.net> | API | 1.0 | 2026-11-10 |
 | 大千视界 | <https://www.sbdl.cc> | API 搜索 + XPath 章节 | 1.4 | 2026-11-09 |
 | 动漫巴士 | <https://dmbus.cc> | XPath | 1.6 | 2026-11-09 |
 | 七色番 | <https://www.7sefun.top> | XPath | 1.5 | 2026-11-09 |

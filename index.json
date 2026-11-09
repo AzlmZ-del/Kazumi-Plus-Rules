@@ -84,6 +84,16 @@
     "lastUpdate": 1792568540000
   },
   {
+    "name": "TvTFun",
+    "author": "小鲸鱼",
+    "type": "API",
+    "version": "1.0",
+    "directConnection": false,
+    "useNativePlayer": true,
+    "antiCrawlerEnabled": false,
+    "lastUpdate": 1794263221000
+  },
+  {
     "name": "七色番",
     "author": "小鲸鱼",
     "type": "XPath",
