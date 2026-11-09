@@ -1,0 +1,58 @@
+{
+    "api": "9",
+    "type": "anime",
+    "name": "TvTFun",
+    "author": "小鲸鱼",
+    "version": "1.0",
+    "muliSources": true,
+    "useWebview": true,
+    "useNativePlayer": true,
+    "usePost": false,
+    "useLegacyParser": false,
+    "adBlocker": true,
+    "directConnection": false,
+    "baseURL": "https://www.tvtfun.net",
+    "userAgent": "",
+    "referer": "",
+    "searchMode": "api",
+    "searchApiConfig": {
+        "request": {
+            "method": "GET",
+            "url": "https://www.tvtfun.net/api/client/anime",
+            "query": {
+                "keyword": "@keyword",
+                "page": 1,
+                "pageSize": 24
+            }
+        },
+        "listPath": "$.data.items[*]",
+        "namePath": "$.name",
+        "sourcePath": "$.slug"
+    },
+    "chapterMode": "api",
+    "chapterApiConfig": {
+        "request": {
+            "method": "GET",
+            "url": "https://www.tvtfun.net/api/client/anime/@source"
+        },
+        "format": "nested",
+        "roadsPath": "$.data.seasons[*]",
+        "roadNamePath": "$.name",
+        "episodesPath": "$.episodes[*]",
+        "episodeNamePath": "$.number",
+        "episodeUrlPath": "$.watchPath",
+        "variables": {
+            "slug": "$.data.slug"
+        }
+    },
+    "antiCrawlerConfig": {
+        "enabled": false,
+        "captchaType": 1,
+        "captchaImage": "",
+        "captchaInput": "",
+        "captchaButton": "",
+        "captchaDetectType": 1,
+        "captchaDetectValue": "",
+        "captchaScript": ""
+    }
+}
