@@ -9,6 +9,15 @@ __pycache__/
 # 本地工作区说明，不上传
 AGENTS.md
 
+# 本机通知脚本：硬编码 adb 路径与手机局域网 IP，不进版本库
+agent_notify.ps1
+
+# 临时工作目录：抓包 HTML、探测脚本、probe 报告等，用完即删
+.tmp/
+
 # 系统
 .DS_Store
 Thumbs.db
+
+# agent 临时文件（会话产物，勿提交）
+/tmp/
