@@ -58,12 +58,13 @@
   },
   {
     "name": "MX动漫",
-    "author": "Predidit",
+    "author": "小鲸鱼",
     "type": "XPath",
-    "version": "2.5",
+    "version": "2.6",
+    "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1792568540000
+    "lastUpdate": 1794318309000
   },
   {
     "name": "omofuna",
