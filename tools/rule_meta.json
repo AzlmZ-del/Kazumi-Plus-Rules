@@ -78,9 +78,5 @@
   "Hanime1": {
     "site": "https://hanime1.me",
     "mode": "XPath"
-  },
-  "TvTFun": {
-    "site": "https://www.tvtfun.net",
-    "mode": "API"
   }
 }
