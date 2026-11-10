@@ -53,6 +53,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
+| omofuni | <https://omofun.in> | XPath | 1.4 | 2026-11-11 |
 | 橘子动漫 | <https://www.mgnacg.com> | API 搜索 + XPath 章节 | 1.4 | 2026-11-11 |
 | 路漫漫 | <https://www.lmm85.com> | API 搜索 + XPath 章节 | 2.5 | 2026-11-11 |
 | 黑猫动漫 | <https://www.baimaodm.com> | XPath | 1.2 | 2026-11-10 |
@@ -72,7 +73,6 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | giriGiriLove | <https://ani.girigirilove.com> | API 搜索 + XPath 章节 | 2.6 | 2026-10-21 |
 | MuteFun | <https://www.2kdm.com> | API 搜索 + XPath 章节 | 1.5 | 2026-10-21 |
 | omofuna | <https://www.omofuna.com> | XPath | 1.1 | 2026-10-21 |
-| omofuni | <https://omofun.in> | XPath | 1.3 | 2026-10-21 |
 <!-- rules-table:end -->
 
 ## 与官方版的兼容性
