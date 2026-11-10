@@ -53,6 +53,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
+| 路漫漫 | <https://www.lmm85.com> | API 搜索 + XPath 章节 | 2.5 | 2026-11-11 |
 | 黑猫动漫 | <https://www.baimaodm.com> | XPath | 1.2 | 2026-11-10 |
 | MX动漫 | <https://www.dcc3.com> | XPath | 2.6 | 2026-11-10 |
 | 大千视界 | <https://www.sbdl.cc> | API 搜索 + XPath 章节 | 1.4 | 2026-11-09 |
@@ -72,7 +73,6 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | omofuna | <https://www.omofuna.com> | XPath | 1.1 | 2026-10-21 |
 | omofuni | <https://omofun.in> | XPath | 1.3 | 2026-10-21 |
 | 橘子动漫 | <https://www.mgnacg.com> | API 搜索 + XPath 章节 | 1.3 | 2026-10-21 |
-| 路漫漫 | <https://www.lmm85.com> | API 搜索 + XPath 章节 | 2.4 | 2026-10-21 |
 <!-- rules-table:end -->
 
 ## 与官方版的兼容性

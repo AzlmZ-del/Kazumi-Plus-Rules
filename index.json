@@ -165,12 +165,13 @@
   },
   {
     "name": "路漫漫",
-    "author": "Predidit",
+    "author": "小鲸鱼",
     "type": "混合",
-    "version": "2.4",
+    "version": "2.5",
+    "directConnection": true,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1792568540000
+    "lastUpdate": 1794348311000
   },
   {
     "name": "青空次元",
