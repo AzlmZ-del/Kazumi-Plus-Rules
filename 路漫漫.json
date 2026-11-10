@@ -1,17 +1,19 @@
 {
-    "api": "3",
+    "api": "9",
     "type": "anime",
     "name": "路漫漫",
-    "author": "Predidit",
-    "version": "2.4",
+    "author": "小鲸鱼",
+    "version": "2.5",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
     "usePost": false,
     "useLegacyParser": false,
     "adBlocker": false,
-    "userAgent": "",
+    "directConnection": true,
     "baseURL": "https://www.lmm85.com",
+    "userAgent": "",
+    "referer": "",
     "searchMode": "api",
     "searchApiConfig": {
         "request": {
@@ -28,7 +30,7 @@
         "sourceTemplate": "https://www.lmm85.com/index.php/vod/detail/id/@source.html"
     },
     "chapterMode": "xpath",
-    "chapterRoads": "//div[contains(@class, 'module-player-list')]",
-    "chapterResult": ".//a[contains(@href, '/play/')]",
-    "referer": ""
+    "chapterRoads": "//div[@class*='module-player-list']",
+    "chapterRoadName": "//div[@class*='module-tab-item']/span",
+    "chapterResult": "//a[@href*='/play/']"
 }
