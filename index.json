@@ -126,12 +126,13 @@
   },
   {
     "name": "橘子动漫",
-    "author": "Predidit",
+    "author": "小鲸鱼",
     "type": "混合",
-    "version": "1.3",
+    "version": "1.4",
+    "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1792568540000
+    "lastUpdate": 1794350557000
   },
   {
     "name": "次元城",
