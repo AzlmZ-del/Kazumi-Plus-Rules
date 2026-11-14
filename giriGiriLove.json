@@ -1,34 +1,50 @@
 {
-    "api": "3",
+    "api": "9",
     "type": "anime",
     "name": "giriGiriLove",
-    "author": "Predidit",
-    "version": "2.6",
+    "author": "小鲸鱼",
+    "version": "2.7",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
     "usePost": false,
     "useLegacyParser": false,
     "adBlocker": false,
+    "directConnection": false,
+    "baseURL": "https://m3u8.girigirilove.com",
     "userAgent": "",
-    "baseURL": "https://ani.girigirilove.com",
+    "referer": "",
     "searchMode": "api",
     "searchApiConfig": {
         "request": {
             "method": "GET",
-            "url": "https://ani.girigirilove.com/index.php/ajax/suggest",
+            "url": "https://m3u8.girigirilove.com/api.php/Vod/get_list",
             "query": {
-                "mid": "1",
-                "wd": "@keyword"
-            }
+                "vod_name": "@keyword",
+                "offset": 0,
+                "limit": 24
+            },
+            "bodyType": "none"
         },
-        "listPath": "$.list[*]",
-        "namePath": "$.name",
-        "sourcePath": "$.id",
-        "sourceTemplate": "https://ani.girigirilove.com/GV@source/"
+        "listPath": "$.info.rows[*]",
+        "namePath": "$.vod_name",
+        "sourcePath": "$.vod_id"
     },
-    "chapterMode": "xpath",
-    "chapterRoads": "//ul[@class='anthology-list-play size']",
-    "chapterResult": "//li/a",
-    "referer": ""
+    "chapterMode": "api",
+    "chapterApiConfig": {
+        "request": {
+            "method": "GET",
+            "url": "https://m3u8.girigirilove.com/api.php/Vod/get_detail",
+            "query": {
+                "vod_id": "@source"
+            },
+            "bodyType": "none"
+        },
+        "format": "delimited",
+        "roadNamesPath": "$.info.vod_play_from",
+        "roadEpisodesPath": "$.info.vod_play_url",
+        "roadSeparator": "$$$",
+        "episodeSeparator": "#",
+        "fieldSeparator": "$"
+    }
 }

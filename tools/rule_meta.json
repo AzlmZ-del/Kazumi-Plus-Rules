@@ -56,8 +56,8 @@
     "mode": "XPath"
   },
   "giriGiriLove": {
-    "site": "https://ani.girigirilove.com",
-    "mode": "API 搜索 + XPath 章节"
+    "site": "https://m3u8.girigirilove.com",
+    "mode": "API"
   },
   "路漫漫": {
     "site": "https://www.lmm85.com",
