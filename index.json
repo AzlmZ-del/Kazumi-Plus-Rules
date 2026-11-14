@@ -31,12 +31,13 @@
   },
   {
     "name": "giriGiriLove",
-    "author": "Predidit",
-    "type": "混合",
-    "version": "2.6",
+    "author": "小鲸鱼",
+    "type": "API",
+    "version": "2.7",
+    "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1792568540000
+    "lastUpdate": 1794680341000
   },
   {
     "name": "Hanime1",
