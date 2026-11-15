@@ -53,8 +53,8 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
+| 七色番 | <https://www.7sefun.top> | XPath | 1.7 | 2026-11-16 |
 | giriGiriLove | <https://m3u8.girigirilove.com> | API | 2.7 | 2026-11-15 |
-| 七色番 | <https://www.7sefun.top> | XPath | 1.6 | 2026-11-13 |
 | Hanime1 | <https://hanime1.me> | XPath | 0.4 | 2026-11-11 |
 | omofuni | <https://omofun.in> | XPath | 1.4 | 2026-11-11 |
 | 橘子动漫 | <https://www.mgnacg.com> | API 搜索 + XPath 章节 | 1.4 | 2026-11-11 |

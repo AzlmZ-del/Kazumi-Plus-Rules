@@ -91,11 +91,11 @@
     "name": "七色番",
     "author": "小鲸鱼",
     "type": "XPath",
-    "version": "1.6",
+    "version": "1.7",
     "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1794509285000
+    "lastUpdate": 1794785432000
   },
   {
     "name": "动漫巴士",
