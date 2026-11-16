@@ -141,11 +141,11 @@
     "name": "次元城",
     "author": "小鲸鱼",
     "type": "API",
-    "version": "2.3",
-    "directConnection": true,
+    "version": "2.4",
+    "directConnection": false,
     "useNativePlayer": false,
     "antiCrawlerEnabled": false,
-    "lastUpdate": 1794041118000
+    "lastUpdate": 1794804915000
   },
   {
     "name": "稀饭动漫（新）",
