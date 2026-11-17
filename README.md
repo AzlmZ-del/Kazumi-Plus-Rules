@@ -53,6 +53,7 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
+| MuteFun | <https://www.mutedm.com> | XPath | 1.6 | 2026-11-18 |
 | 路漫漫 | <https://www.lmm22.com> | API 搜索 + XPath 章节 | 2.6 | 2026-11-17 |
 | 七色番 | <https://www.7sefun.top> | XPath | 1.8 | 2026-11-16 |
 | 次元城 | <https://www.cycani.org> | API | 2.4 | 2026-11-16 |
@@ -71,7 +72,6 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 | 稀饭动漫（旧） | <https://dm1.xfdm.pro> | XPath | 1.7 | 2026-11-09 |
 | 稀饭动漫（新） | <https://next.xifanacg.com> | API | 1.4 | 2026-11-09 |
 | 月之祠 | <https://www.moonci.com> | API 搜索 + XPath 章节 | 1.4 | 2026-11-09 |
-| MuteFun | <https://www.2kdm.com> | API 搜索 + XPath 章节 | 1.5 | 2026-10-21 |
 | omofuna | <https://www.omofuna.com> | XPath | 1.1 | 2026-10-21 |
 <!-- rules-table:end -->
 

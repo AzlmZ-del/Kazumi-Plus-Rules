@@ -51,12 +51,13 @@
   },
   {
     "name": "MuteFun",
-    "author": "Predidit",
-    "type": "混合",
-    "version": "1.5",
+    "author": "小鲸鱼",
+    "type": "XPath",
+    "version": "1.6",
+    "directConnection": false,
     "useNativePlayer": false,
-    "antiCrawlerEnabled": false,
-    "lastUpdate": 1792568540000
+    "antiCrawlerEnabled": true,
+    "lastUpdate": 1794945607000
   },
   {
     "name": "MX动漫",
