@@ -3,7 +3,7 @@
     "type": "anime",
     "name": "路漫漫",
     "author": "小鲸鱼",
-    "version": "2.5",
+    "version": "2.6",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
@@ -11,14 +11,14 @@
     "useLegacyParser": false,
     "adBlocker": false,
     "directConnection": true,
-    "baseURL": "https://www.lmm85.com",
+    "baseURL": "https://www.lmm22.com",
     "userAgent": "",
     "referer": "",
     "searchMode": "api",
     "searchApiConfig": {
         "request": {
             "method": "GET",
-            "url": "https://www.lmm85.com/index.php/ajax/suggest",
+            "url": "https://www.lmm22.com/index.php/ajax/suggest",
             "query": {
                 "mid": "1",
                 "wd": "@keyword"
@@ -27,7 +27,7 @@
         "listPath": "$.list[*]",
         "namePath": "$.name",
         "sourcePath": "$.id",
-        "sourceTemplate": "https://www.lmm85.com/index.php/vod/detail/id/@source.html"
+        "sourceTemplate": "https://www.lmm22.com/index.php/vod/detail/id/@source.html"
     },
     "chapterMode": "xpath",
     "chapterRoads": "//div[@class*='module-player-list']",
