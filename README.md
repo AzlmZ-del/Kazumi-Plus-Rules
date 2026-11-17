@@ -53,13 +53,13 @@ https://raw.githubusercontent.com/AzlmZ-del/Kazumi-Plus-Rules/main/
 <!-- rules-table:start -->
 | 规则名 | 站点 | 模式 | 版本 | 最后更新 |
 | --- | --- | --- | --- | --- |
+| 路漫漫 | <https://www.lmm22.com> | API 搜索 + XPath 章节 | 2.6 | 2026-11-17 |
 | 七色番 | <https://www.7sefun.top> | XPath | 1.8 | 2026-11-16 |
 | 次元城 | <https://www.cycani.org> | API | 2.4 | 2026-11-16 |
 | giriGiriLove | <https://m3u8.girigirilove.com> | API | 2.7 | 2026-11-15 |
 | Hanime1 | <https://hanime1.me> | XPath | 0.4 | 2026-11-11 |
 | omofuni | <https://omofun.in> | XPath | 1.4 | 2026-11-11 |
 | 橘子动漫 | <https://www.mgnacg.com> | API 搜索 + XPath 章节 | 1.4 | 2026-11-11 |
-| 路漫漫 | <https://www.lmm85.com> | API 搜索 + XPath 章节 | 2.5 | 2026-11-11 |
 | 黑猫动漫 | <https://www.baimaodm.com> | XPath | 1.2 | 2026-11-10 |
 | MX动漫 | <https://www.dcc3.com> | XPath | 2.6 | 2026-11-10 |
 | 大千视界 | <https://www.sbdl.cc> | API 搜索 + XPath 章节 | 1.4 | 2026-11-09 |
