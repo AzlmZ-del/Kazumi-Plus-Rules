@@ -1,33 +1,36 @@
 {
-    "api": "3",
+    "api": "9",
     "type": "anime",
     "name": "MuteFun",
-    "author": "Predidit",
-    "version": "1.5",
+    "author": "小鲸鱼",
+    "version": "1.6",
     "muliSources": false,
     "useWebview": false,
     "useNativePlayer": false,
     "usePost": false,
     "useLegacyParser": false,
     "adBlocker": false,
-    "userAgent": "",
-    "baseURL": "https://www.2kdm.com/voddetail",
-    "searchMode": "api",
-    "searchApiConfig": {
-        "request": {
-            "method": "GET",
-            "url": "https://www.2kdm.com/index.php/ajax/suggest",
-            "query": {
-                "mid": "1",
-                "wd": "@keyword"
-            }
-        },
-        "listPath": "$.list[*]",
-        "namePath": "$.name",
-        "sourcePath": "$.id"
-    },
+    "directConnection": false,
+    "baseURL": "https://www.mutedm.com",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "referer": "https://www.mutedm.com/",
+    "searchMode": "xpath",
+    "searchURL": "https://www.mutedm.com/search?q=@keyword",
+    "searchList": "//a[@class='video-card']",
+    "searchName": "//span[@class='video-card-title']",
+    "searchResult": ".",
     "chapterMode": "xpath",
-    "chapterRoads": "//div[contains(@class,'module-play-list-content')]",
-    "chapterResult": ".//a[contains(@class,'module-play-list-link')]",
-    "referer": ""
+    "chapterRoads": "//div[@class='episode-panel']",
+    "chapterRoadName": "//h3[@class='episode-source-title']",
+    "chapterResult": "//div[@class='episode-list']/a",
+    "antiCrawlerConfig": {
+        "enabled": true,
+        "captchaType": 1,
+        "captchaDetectType": 2,
+        "captchaDetectValue": "安全验证",
+        "captchaImage": "//img[@alt='五位数字验证码']",
+        "captchaInput": "//input[@id='gate-answer']",
+        "captchaButton": "//form[@data-captcha-gate-form]//button[@type='submit']",
+        "captchaScript": ""
+    }
 }
